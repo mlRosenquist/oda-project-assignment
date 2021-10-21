@@ -11,7 +11,6 @@ class Classifier:
         model = NearestCentroid()
         model = model.fit(dataSet.train_images, dataSet.train_labels)
 
-        print(f"Training Set Score : {model.score(dataSet.train_images, dataSet.train_labels) * 100} %")
         return model.predict(dataSet.test_images)
 
     def nsc_classify(dataSet: DataSet, K) -> np.ndarray:
@@ -21,7 +20,6 @@ class Classifier:
         model = KNeighborsClassifier(neighbors, weights='uniform')
         model.fit(dataSet.train_images, dataSet.train_labels)
 
-        print(f"Training Set Score : {model.score(dataSet.train_images, dataSet.train_labels) * 100} %")
         return model.predict(dataSet.test_images)
 
     def perceptron_bp_classify(dataSet: DataSet):
@@ -29,7 +27,6 @@ class Classifier:
 
         model.fit(dataSet.train_images, dataSet.train_labels)
 
-        print(f"Training Set Score : {model.score(dataSet.train_images, dataSet.train_labels) * 100} %")
         return model.predict(dataSet.test_images)
 
     def perceptron_mse_classify(dataSet: DataSet):
@@ -37,7 +34,6 @@ class Classifier:
 
         model.fit(dataSet.train_images, dataSet.train_labels)
 
-        print(f"Training Set Score : {model.score(dataSet.train_images, dataSet.train_labels) * 100} %")
         return model.predict(dataSet.test_images)
 
 
