@@ -1,4 +1,6 @@
 import numpy as np
+from numpy import arange
+from sklearn.model_selection import RepeatedStratifiedKFold, GridSearchCV
 from sklearn.neighbors import NearestCentroid, KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier, MLPRegressor
 
@@ -7,16 +9,20 @@ from utility import DataSet
 
 class Classifier:
 
+    @staticmethod
     def nc_classify(dataSet: DataSet) -> np.ndarray:
         model = NearestCentroid()
+
         model = model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
+    @staticmethod
     def nsc_classify(dataSet: DataSet, K) -> np.ndarray:
         raise NotImplementedError
 
-    def nn_classify(dataSet: DataSet, neighbors):
+    @staticmethod
+    def nn_classify(dataSet: DataSet, neighbors) -> np.ndarray:
         model = KNeighborsClassifier(neighbors, weights='uniform')
         model.fit(dataSet.train_images, dataSet.train_labels)
 

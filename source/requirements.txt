@@ -1,0 +1,6 @@
+pydantic
+numpy
+sklearn
+pandas
+plotly
+matplotlib

@@ -1,4 +1,7 @@
+import os
+
 from pydantic import BaseModel
+from sklearn.decomposition import PCA
 from sklearn.preprocessing import minmax_scale, StandardScaler
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -13,16 +16,31 @@ class DataSet:
 
 class Utility:
 
-    def load_MNIST(mnistFolder: str ) -> DataSet:
+    @staticmethod
+    def load_MNIST() -> DataSet:
+        cwd = os.getcwd()
+        mnist_folder = cwd + "\\data"
 
         dataSet: DataSet = DataSet()
-        dataSet.train_images = StandardScaler().fit_transform(Utility.__loadMNISTImages(mnistFolder + "\\train-images.idx3-ubyte"))
-        dataSet.test_images = StandardScaler().fit_transform(Utility.__loadMNISTImages(mnistFolder + "\\t10k-images.idx3-ubyte"))
-        dataSet.train_labels = Utility.__loadMNISTLabels(mnistFolder + '\\train-labels.idx1-ubyte')
-        dataSet.test_labels = Utility.__loadMNISTLabels(mnistFolder + '\\t10k-labels.idx1-ubyte')
+        dataSet.train_images = StandardScaler().fit_transform(Utility.__loadMNISTImages(mnist_folder + "\\mnist-train-images.idx3-ubyte"))
+        dataSet.test_images = StandardScaler().fit_transform(Utility.__loadMNISTImages(mnist_folder + "\\mnist-test-images.idx3-ubyte"))
+        dataSet.train_labels = Utility.__loadMNISTLabels(mnist_folder + '\\mnist-train-labels.idx1-ubyte')
+        dataSet.test_labels = Utility.__loadMNISTLabels(mnist_folder + '\\mnist-test-labels.idx1-ubyte')
 
         return dataSet
 
+    @staticmethod
+    def pca_transform(dataSet: DataSet, components: int) -> DataSet:
+        pca_dataset: DataSet = DataSet()
+        pca = PCA(n_components=components)
+
+        pca_dataset.train_images = pca.fit_transform(dataSet.train_images)
+        pca_dataset.test_images = pca.transform(dataSet.test_images)
+        pca_dataset.test_labels = dataSet.test_labels
+        pca_dataset.train_labels = dataSet.train_labels
+        return pca_dataset;
+
+    @staticmethod
     def __loadMNISTImages(path: str) -> np.ndarray:
         fp = open(path, "rb")
 
@@ -44,6 +62,7 @@ class Utility:
 
         return x
 
+    @staticmethod
     def __loadMNISTLabels(path: str) -> np.array:
         fp = open(path, "rb")
 
@@ -59,7 +78,8 @@ class Utility:
         fp.close()
         return np.array(labels_array)
 
-    def load_ORL(orlFolder: str ) -> DataSet:
+    @staticmethod
+    def load_ORL(orlFolder: str) -> DataSet:
 
         dataSet: DataSet = DataSet()
 
