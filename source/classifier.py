@@ -11,8 +11,8 @@ from source.utility import DataSet
 class Classifier:
 
     @staticmethod
-    def nc_classify(dataSet: DataSet) -> np.ndarray:
-        model = NearestCentroid()
+    def nc_classify(dataSet: DataSet, shrink_treshold) -> np.ndarray:
+        model = NearestCentroid(shrink_threshold=shrink_treshold)
 
         model = model.fit(dataSet.train_images, dataSet.train_labels)
 
@@ -23,20 +23,20 @@ class Classifier:
         raise NotImplementedError
 
     @staticmethod
-    def nn_classify(dataSet: DataSet, neighbors) -> np.ndarray:
-        model = KNeighborsClassifier(neighbors, weights='uniform')
+    def nn_classify(dataSet: DataSet, neighbors, weights) -> np.ndarray:
+        model = KNeighborsClassifier(neighbors, weights=weights)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
-    def perceptron_bp_classify(dataSet: DataSet):
-        model = SGDClassifier(loss='hinge', alpha=0, learning_rate='adaptive', eta0=0.1, max_iter=1000)
+    def perceptron_bp_classify(dataSet: DataSet, eta, learning_rate):
+        model = SGDClassifier(loss='hinge', alpha=0, learning_rate=learning_rate, eta0=eta)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
-    def perceptron_mse_classify(dataSet: DataSet):
-        model = SGDClassifier(loss='squared_error', alpha=0, learning_rate='adaptive', eta0=0.1, max_iter=1000)
+    def perceptron_mse_classify(dataSet: DataSet, eta, learning_rate):
+        model = SGDClassifier(loss='squared_error', alpha=0, learning_rate=learning_rate, eta0=eta, max_iter=1000)
 
         model.fit(dataSet.train_images, dataSet.train_labels)
 

@@ -8,6 +8,17 @@ from source.classifier import Classifier
 from source.dataVisualization import DataVisualization
 from source.utility import Utility
 
+# 2D:
+# FULLD:
+def tuneHyperParameters():
+    # Load data sets
+    orl_dataSet_raw = Utility.load_ORL()
+    orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
+
+    # defining parameter range
+    param_grid = {
+                  }
+
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "ORL - Nearest sub-class centroid"
