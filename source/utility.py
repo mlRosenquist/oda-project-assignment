@@ -21,9 +21,14 @@ class Utility:
         cwd = os.getcwd()
         mnist_folder = cwd + "\\data"
 
+        scaler = StandardScaler()
         dataSet: DataSet = DataSet()
-        dataSet.train_images = StandardScaler().fit_transform(Utility.__loadMNISTImages(mnist_folder + "\\mnist-train-images.idx3-ubyte"))
-        dataSet.test_images = StandardScaler().fit_transform(Utility.__loadMNISTImages(mnist_folder + "\\mnist-test-images.idx3-ubyte"))
+
+        x_train = Utility.__loadMNISTImages(mnist_folder + "\\mnist-train-images.idx3-ubyte")
+        x_test = Utility.__loadMNISTImages(mnist_folder + "\\mnist-test-images.idx3-ubyte")
+
+        dataSet.train_images = scaler.fit_transform(x_train)
+        dataSet.test_images = scaler.transform(x_test)
         dataSet.train_labels = Utility.__loadMNISTLabels(mnist_folder + '\\mnist-train-labels.idx1-ubyte')
         dataSet.test_labels = Utility.__loadMNISTLabels(mnist_folder + '\\mnist-test-labels.idx1-ubyte')
 
@@ -38,7 +43,7 @@ class Utility:
         pca_dataset.test_images = pca.transform(dataSet.test_images)
         pca_dataset.test_labels = dataSet.test_labels
         pca_dataset.train_labels = dataSet.train_labels
-        return pca_dataset;
+        return pca_dataset
 
     @staticmethod
     def __loadMNISTImages(path: str) -> np.ndarray:
@@ -79,28 +84,31 @@ class Utility:
         return np.array(labels_array)
 
     @staticmethod
-    def load_ORL(orlFolder: str) -> DataSet:
-
+    def load_ORL() -> DataSet:
+        cwd = os.getcwd()
+        orl_folder = cwd + "\\data"
         dataSet: DataSet = DataSet()
 
-        all_images = Utility.__loadORLImages(orlFolder + "\\orl_data.txt")
-        all_labels = Utility.__loadORLLabels(orlFolder + '\\orl_lbls.txt')
+        all_images = Utility.__loadORLImages(orl_folder + "\\orl_data.txt")
+        all_labels = Utility.__loadORLLabels(orl_folder + '\\orl_lbls.txt')
 
         train_images, test_images, train_labels, test_labels =\
             train_test_split(all_images, all_labels, test_size=0.3, random_state=42)
 
-        dataSet.train_images = StandardScaler().fit_transform(train_images)
-        dataSet.test_images = StandardScaler().fit_transform(test_images)
+        scaler = StandardScaler()
+        dataSet.train_images = scaler.fit_transform(train_images)
+        dataSet.test_images = scaler.transform(test_images)
         dataSet.train_labels = train_labels
         dataSet.test_labels = test_labels
         return dataSet
 
+    @staticmethod
     def __loadORLImages(path: str):
         dataframe = pd.read_csv(path, delimiter="\t", header=None)
         dataframe = dataframe.drop(columns=[400])
         return dataframe.T.to_numpy()
 
-
+    @staticmethod
     def __loadORLLabels(path: str):
         dataframe = pd.read_csv(path, header=None)
         return dataframe.to_numpy().reshape(-1,)

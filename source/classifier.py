@@ -1,10 +1,11 @@
 import numpy as np
 from numpy import arange
+from sklearn.linear_model import SGDClassifier
 from sklearn.model_selection import RepeatedStratifiedKFold, GridSearchCV
 from sklearn.neighbors import NearestCentroid, KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier, MLPRegressor
 
-from utility import DataSet
+from source.utility import DataSet
 
 
 class Classifier:
@@ -29,14 +30,13 @@ class Classifier:
         return model.predict(dataSet.test_images)
 
     def perceptron_bp_classify(dataSet: DataSet):
-        model = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
-
+        model = SGDClassifier(loss='hinge', alpha=0, learning_rate='adaptive', eta0=0.1, max_iter=1000)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
     def perceptron_mse_classify(dataSet: DataSet):
-        model = MLPRegressor(random_state=1)
+        model = SGDClassifier(loss='squared_error', alpha=0, learning_rate='adaptive', eta0=0.1, max_iter=1000)
 
         model.fit(dataSet.train_images, dataSet.train_labels)
 
