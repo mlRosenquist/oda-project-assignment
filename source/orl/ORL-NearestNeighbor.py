@@ -37,7 +37,8 @@ def tuneHyperParameters():
     print(grid.best_params_)
     grid_predictions = grid.predict(orl_dataSet_2d.test_images)
     print(classification_report(orl_dataSet_2d.test_labels, grid_predictions))
-tuneHyperParameters()
+
+
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "ORL - Nearest neighbor"
@@ -55,10 +56,6 @@ if __name__ == '__main__':
     # Print Results
     print(classification_report(orl_dataSet_raw.test_labels, results_raw))
     print(classification_report(orl_dataSet_2d.test_labels, results_2d))
-
-    # Visualize Scatter
-    scatterplt = DataVisualization.ScatterPlot_2d(orl_dataSet_2d.test_images, orl_dataSet_2d.test_labels, 10, figureTitle + " (2D)")
-    scatterplt.savefig(filePrefix+'-scatter-2d.png')
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(orl_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")

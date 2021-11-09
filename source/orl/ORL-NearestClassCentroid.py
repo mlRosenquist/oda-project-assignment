@@ -10,6 +10,7 @@ from source.classifier import Classifier
 from source.dataVisualization import DataVisualization
 from source.utility import Utility
 
+
 def tuneHyperParameters():
     # Load data sets
     orl_dataSet_raw = Utility.load_ORL()
@@ -36,16 +37,12 @@ if __name__ == '__main__':
     orl_dataSet_raw = Utility.load_ORL()
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
-    results_raw = Classifier.nc_classify(orl_dataSet_raw)
-    results_2d = Classifier.nc_classify(orl_dataSet_2d)
+    results_raw = Classifier.nc_classify(orl_dataSet_raw, None)
+    results_2d = Classifier.nc_classify(orl_dataSet_2d, None)
 
     # Print Results
     print(classification_report(orl_dataSet_raw.test_labels, results_raw))
     print(classification_report(orl_dataSet_2d.test_labels, results_2d))
-
-    # Visualize Scatter
-    scatterplt = DataVisualization.ScatterPlot_2d(orl_dataSet_2d.test_images, orl_dataSet_2d.test_labels, 10, figureTitle + " (2D)")
-    scatterplt.savefig(filePrefix+'-scatter-2d.png')
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(orl_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")

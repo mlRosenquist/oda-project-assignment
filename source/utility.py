@@ -1,11 +1,13 @@
 import os
 
+from matplotlib import pyplot
 from pydantic import BaseModel
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import minmax_scale, StandardScaler
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
+from scipy.io import loadmat
 
 class DataSet:
     train_images: np.ndarray
@@ -17,20 +19,19 @@ class DataSet:
 class Utility:
 
     @staticmethod
-    def load_MNIST() -> DataSet:
-        cwd = os.getcwd()
-        mnist_folder = cwd + "\\data"
+    def load_MNIST(path) -> DataSet:
+        dataSet = loadmat(path+'mnist_loaded.mat')
+        X_train = dataSet['train_images']
+        X_train = np.reshape(X_train, (60000,28*28))
 
-        scaler = StandardScaler()
-        dataSet: DataSet = DataSet()
+        y_train = dataSet['train_labels']
+        X_test = dataSet['test_images']
+        y_test = dataSet['test_labels']
 
-        x_train = Utility.__loadMNISTImages(mnist_folder + "\\mnist-train-images.idx3-ubyte")
-        x_test = Utility.__loadMNISTImages(mnist_folder + "\\mnist-test-images.idx3-ubyte")
-
-        dataSet.train_images = scaler.fit_transform(x_train)
-        dataSet.test_images = scaler.transform(x_test)
-        dataSet.train_labels = Utility.__loadMNISTLabels(mnist_folder + '\\mnist-train-labels.idx1-ubyte')
-        dataSet.test_labels = Utility.__loadMNISTLabels(mnist_folder + '\\mnist-test-labels.idx1-ubyte')
+        # plot raw pixel data
+        image = X_train[5000].reshape((28, 28))
+        pyplot.imshow(image, cmap='gray')
+        pyplot.show()
 
         return dataSet
 
@@ -59,10 +60,10 @@ class Utility:
         images_bytes = fp.read()
         images_array = [x for x in images_bytes]
 
-        x = np.reshape(images_array, (numCols, numRows, numImages), order="F")
+        x = np.reshape(images_array, (numCols, numRows, numImages))
         x = x.transpose((1, 0, 2))
 
-        x = np.reshape(x, (numRows*numRows, numImages), order="F")
+        x = np.reshape(x, (numRows*numRows, numImages))
         x = x.transpose()
 
         return x
@@ -84,22 +85,32 @@ class Utility:
         return np.array(labels_array)
 
     @staticmethod
-    def load_ORL() -> DataSet:
-        cwd = os.getcwd()
-        orl_folder = cwd + "\\data"
+    def load_ORL(path) -> DataSet:
         dataSet: DataSet = DataSet()
 
-        all_images = Utility.__loadORLImages(orl_folder + "\\orl_data.txt")
-        all_labels = Utility.__loadORLLabels(orl_folder + '\\orl_lbls.txt')
+        all_images = Utility.__loadORLImages(path + "orl_data.txt")
+        all_labels = Utility.__loadORLLabels(path + 'orl_lbls.txt')
 
         train_images, test_images, train_labels, test_labels =\
             train_test_split(all_images, all_labels, test_size=0.3, random_state=42)
 
-        scaler = StandardScaler()
-        dataSet.train_images = scaler.fit_transform(train_images)
-        dataSet.test_images = scaler.transform(test_images)
+        dataSet.train_images = train_images
+        dataSet.test_images = test_images
         dataSet.train_labels = train_labels
         dataSet.test_labels = test_labels
+        return dataSet
+
+    @staticmethod
+    def load_ORL_original(path) -> DataSet:
+        dataSet: DataSet = DataSet()
+
+        all_images = Utility.__loadORLImages(path + "orl_data.txt")
+        all_labels = Utility.__loadORLLabels(path + 'orl_lbls.txt')
+
+        dataSet.train_images = all_images
+        dataSet.test_images = all_images
+        dataSet.train_labels = all_labels
+        dataSet.test_labels = all_labels
         return dataSet
 
     @staticmethod
