@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a4ee6db6-3419-43e5-be24-3824aa52763a" name="Changes" comment="Updated stuff">
+      <change afterPath="$PROJECT_DIR$/source/orl/data/orl_data.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/data/orl_lbls.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/dataVisualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/dataVisualization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-NearestNeighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-NearestNeighbor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-NearestSubClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-NearestSubClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronBP.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronBP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronMSE.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronMSE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/data/mnist-test-images.idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/data/mnist-test-labels.idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/data/mnist-train-images.idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/data/mnist-train-labels.idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/mnist-scatter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestNeighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestNeighbor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-PerceptronBP.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-PerceptronBP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-PerceptronMSE.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-PerceptronMSE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/data/orl_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/data/orl_lbls.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/orl-scatter-original-first.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/orl-scatter-original-second.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/orl-scatter-test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/utility.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20HRendboG1IkevZaUArJ1478dg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/mnist/data" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Morten\source\python-repos\oda-project-assignment\source\mnist\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Morten\source\python-repos\oda-project-assignment\source\orl\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.MNIST-NearestClassCentroid">
+    <configuration name="MNIST-NearestClassCentroid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MNIST-NearestSubClassCentroid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-NearestSubClassCentroid.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MNIST-PerceptronBP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-PerceptronBP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MNIST-PerceptronMSE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-PerceptronMSE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ORL-NearestClassCentroid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/orl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.MNIST-NearestSubClassCentroid" />
+      <item itemvalue="Python.MNIST-PerceptronBP" />
+      <item itemvalue="Python.MNIST-PerceptronMSE" />
+      <item itemvalue="Python.ORL-NearestClassCentroid" />
+      <item itemvalue="Python.MNIST-NearestClassCentroid" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.MNIST-NearestClassCentroid" />
+        <item itemvalue="Python.ORL-NearestClassCentroid" />
+        <item itemvalue="Python.MNIST-PerceptronMSE" />
+        <item itemvalue="Python.MNIST-PerceptronBP" />
+        <item itemvalue="Python.MNIST-NearestSubClassCentroid" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4ee6db6-3419-43e5-be24-3824aa52763a" name="Changes" comment="" />
+      <created>1635699626869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635699626869</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Updated stuff">
+      <created>1636476006177</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636476006177</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/files" />
+      <path value="$PROJECT_DIR$/source" />
+    </ignored-roots>
+    <MESSAGE value="Updated stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated stuff" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -14,7 +14,7 @@ from source.utility import Utility
 # FULLD:
 def tuneHyperParameters():
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST()
+    mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     # defining parameter range
@@ -42,31 +42,31 @@ def tuneHyperParameters():
     grid.fit(mnist_dataSet_2d.train_images, mnist_dataSet_2d.train_labels)
     print(grid.best_params_)
 
-tuneHyperParameters()
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "MNIST - Perceptron using MSE"
-    figurePath = "pictures\\"
     classifierName = "perceptronMSE"
-    filePrefix = figurePath+classifierName
+    figurePrefix = f'pictures\\{classifierName}'
+    logPath = f'logs\\{classifierName}-log.txt'
+    logfile = open(logPath, 'w')
 
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST()
+    mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
-    results_raw = Classifier.perceptron_mse_classify(mnist_dataSet_raw)
-    results_2d = Classifier.perceptron_mse_classify(mnist_dataSet_2d)
+    results_raw = Classifier.perceptron_mse_classify(mnist_dataSet_raw, 0.002, 'adaptive')
+    results_2d = Classifier.perceptron_mse_classify(mnist_dataSet_2d, 0.425, 'adaptive')
 
     # Print Results
-    print(classification_report(mnist_dataSet_raw.test_labels, results_raw))
-    print(classification_report(mnist_dataSet_2d.test_labels, results_2d))
+    print(classification_report(mnist_dataSet_raw.test_labels, results_raw), file=logfile)
+    print(classification_report(mnist_dataSet_2d.test_labels, results_2d), file=logfile)
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_raw.test_labels, results_raw, f"{figureTitle} (784D)")
-    confplt.savefig(f"{filePrefix}-confusion-784d.png")
+    confplt.savefig(f"{figurePrefix}-confusion-784d.png")
 
     confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_2d.test_labels, results_2d, f"{figureTitle} (2D)")
-    confplt.savefig(f"{filePrefix}-confusion-2d.png")
+    confplt.savefig(f"{figurePrefix}-confusion-2d.png")
 
 
 

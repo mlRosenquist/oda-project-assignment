@@ -15,7 +15,7 @@ from source.utility import Utility
 # FULLD: {'n_neighbors': 2, 'weights': 'distance'}
 def tuneHyperParameters():
     # Load data sets
-    orl_dataSet_raw = Utility.load_ORL()
+    orl_dataSet_raw = Utility.load_ORL("data\\")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
     # defining parameter range
@@ -42,27 +42,29 @@ def tuneHyperParameters():
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "ORL - Nearest neighbor"
-    figurePath = "pictures\\"
     classifierName = "nearestNeighbor"
-    filePrefix = figurePath+classifierName
+    neighbors = 5
+    figurePrefix = f'pictures\\{classifierName}-{neighbors}'
+    logPath = f'logs\\{classifierName}-{neighbors}-log.txt'
+    logfile = open(logPath, 'w')
 
     # Load data sets
-    orl_dataSet_raw = Utility.load_ORL()
+    orl_dataSet_raw = Utility.load_ORL("data\\")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
     results_raw = Classifier.nn_classify(orl_dataSet_raw, 2, 'distance')
     results_2d = Classifier.nn_classify(orl_dataSet_2d, 5, 'uniform')
 
     # Print Results
-    print(classification_report(orl_dataSet_raw.test_labels, results_raw))
-    print(classification_report(orl_dataSet_2d.test_labels, results_2d))
+    print(classification_report(orl_dataSet_raw.test_labels, results_raw), file=logfile)
+    print(classification_report(orl_dataSet_2d.test_labels, results_2d), file=logfile)
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(orl_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")
-    confplt.savefig(filePrefix+"-confusion-784d.png")
+    confplt.savefig(f'{figurePrefix}-confusion-784d.png')
 
     confplt = DataVisualization.ConfusionMatrix(orl_dataSet_2d.test_labels, results_2d, figureTitle + " (2D)")
-    confplt.savefig(filePrefix+"-confusion-2d.png")
+    confplt.savefig(f'{figurePrefix}-confusion-2d.png')
 
 
 

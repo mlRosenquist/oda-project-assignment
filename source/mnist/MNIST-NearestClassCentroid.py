@@ -14,7 +14,7 @@ from source.utility import Utility
 # {'shrink_threshold': 0.01}
 def tuneHyperParameters():
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST()
+    mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     # defining parameter range
@@ -35,27 +35,28 @@ def tuneHyperParameters():
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "MNIST - Nearest class centroid"
-    figurePath = "pictures\\"
     classifierName = "nearestClassCentroid"
-    filePrefix = figurePath+classifierName
+    figurePrefix = f'pictures\\{classifierName}'
+    logPath = f'logs\\{classifierName}-log.txt'
+    logfile = open(logPath, 'w')
 
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST()
+    mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     results_raw = Classifier.nc_classify(mnist_dataSet_raw, 0.01)
     results_2d = Classifier.nc_classify(mnist_dataSet_2d, 0.01)
 
     # Print Results
-    print(classification_report(mnist_dataSet_raw.test_labels, results_raw))
-    print(classification_report(mnist_dataSet_2d.test_labels, results_2d))
+    print(classification_report(mnist_dataSet_raw.test_labels, results_raw), file=logfile)
+    print(classification_report(mnist_dataSet_2d.test_labels, results_2d), file=logfile)
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")
-    confplt.savefig(filePrefix+"-confusion-784d.png")
+    confplt.savefig(figurePrefix+"-confusion-784d.png")
 
     confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_2d.test_labels, results_2d, figureTitle + " (2D)")
-    confplt.savefig(filePrefix+"-confusion-2d.png")
+    confplt.savefig(figurePrefix+"-confusion-2d.png")
 
 
 

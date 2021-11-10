@@ -1,6 +1,6 @@
 import os
 
-from matplotlib import pyplot
+from matplotlib import  pyplot as plt
 from pydantic import BaseModel
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import minmax_scale, StandardScaler
@@ -22,18 +22,28 @@ class Utility:
     def load_MNIST(path) -> DataSet:
         dataSet = loadmat(path+'mnist_loaded.mat')
         X_train = dataSet['train_images']
-        X_train = np.reshape(X_train, (60000,28*28))
+        X_train = np.reshape(X_train, (28, 28, 60000))
+        X_train = X_train.transpose((1, 0, 2))
+
+        X_train = np.reshape(X_train, (28 * 28, 60000))
+        X_train = X_train.transpose()
+
+        X_test = dataSet['test_images']
+        X_test = np.reshape(X_test, (28, 28, 10000))
+        X_test = X_test.transpose((1, 0, 2))
+
+        X_test = np.reshape(X_test, (28 * 28, 10000))
+        X_test = X_test.transpose()
 
         y_train = dataSet['train_labels']
-        X_test = dataSet['test_images']
         y_test = dataSet['test_labels']
 
-        # plot raw pixel data
-        image = X_train[5000].reshape((28, 28))
-        pyplot.imshow(image, cmap='gray')
-        pyplot.show()
-
-        return dataSet
+        data = DataSet()
+        data.train_images = X_train
+        data.test_images = X_test
+        data.train_labels = y_train
+        data.test_labels = y_test
+        return data
 
     @staticmethod
     def pca_transform(dataSet: DataSet, components: int) -> DataSet:
@@ -46,53 +56,16 @@ class Utility:
         pca_dataset.train_labels = dataSet.train_labels
         return pca_dataset
 
-    @staticmethod
-    def __loadMNISTImages(path: str) -> np.ndarray:
-        fp = open(path, "rb")
-
-        magic = int.from_bytes(fp.read(4), "big")
-        assert magic == 2051
-
-        numImages = int.from_bytes(fp.read(4), "big")
-        numRows = int.from_bytes(fp.read(4), "big")
-        numCols = int.from_bytes(fp.read(4), "big")
-
-        images_bytes = fp.read()
-        images_array = [x for x in images_bytes]
-
-        x = np.reshape(images_array, (numCols, numRows, numImages))
-        x = x.transpose((1, 0, 2))
-
-        x = np.reshape(x, (numRows*numRows, numImages))
-        x = x.transpose()
-
-        return x
-
-    @staticmethod
-    def __loadMNISTLabels(path: str) -> np.array:
-        fp = open(path, "rb")
-
-        magic = int.from_bytes(fp.read(4), "big")
-        assert magic == 2049
-
-        numLabels = int.from_bytes(fp.read(4), "big")
-
-        labels_bytes = fp.read()
-        labels_array = [x for x in labels_bytes]
-        assert len(labels_array) == numLabels
-
-        fp.close()
-        return np.array(labels_array)
 
     @staticmethod
     def load_ORL(path) -> DataSet:
         dataSet: DataSet = DataSet()
 
-        all_images = Utility.__loadORLImages(path + "orl_data.txt")
-        all_labels = Utility.__loadORLLabels(path + 'orl_lbls.txt')
+        all_images = loadmat(path + 'orl_data.mat')['data'].transpose()
+        all_labels = loadmat(path + 'orl_lbls.mat')['lbls']
 
         train_images, test_images, train_labels, test_labels =\
-            train_test_split(all_images, all_labels, test_size=0.3, random_state=42)
+            train_test_split(all_images, all_labels, test_size=0.3, random_state=3)
 
         dataSet.train_images = train_images
         dataSet.test_images = test_images
@@ -104,22 +77,11 @@ class Utility:
     def load_ORL_original(path) -> DataSet:
         dataSet: DataSet = DataSet()
 
-        all_images = Utility.__loadORLImages(path + "orl_data.txt")
-        all_labels = Utility.__loadORLLabels(path + 'orl_lbls.txt')
+        all_images = loadmat(path + 'orl_data.mat')['data'].transpose()
+        all_labels = loadmat(path + 'orl_lbls.mat')['lbls']
 
         dataSet.train_images = all_images
         dataSet.test_images = all_images
         dataSet.train_labels = all_labels
         dataSet.test_labels = all_labels
         return dataSet
-
-    @staticmethod
-    def __loadORLImages(path: str):
-        dataframe = pd.read_csv(path, delimiter="\t", header=None)
-        dataframe = dataframe.drop(columns=[400])
-        return dataframe.T.to_numpy()
-
-    @staticmethod
-    def __loadORLLabels(path: str):
-        dataframe = pd.read_csv(path, header=None)
-        return dataframe.to_numpy().reshape(-1,)

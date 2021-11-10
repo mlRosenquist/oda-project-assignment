@@ -15,7 +15,7 @@ from source.utility import Utility
 # FULLD: {'n_neighbors': 5, 'weights': 'distance'}
 def tuneHyperParameters():
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST()
+    mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     # defining parameter range
@@ -37,28 +37,30 @@ def tuneHyperParameters():
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "MNIST - Nearest neighbor"
-    figurePath = "pictures\\"
     classifierName = "nearestNeighbor"
-    filePrefix = figurePath+classifierName
+    neighbors = 5
+    figurePrefix = f'pictures\\{classifierName}-{neighbors}'
+    logPath = f'logs\\{classifierName}-{neighbors}-log.txt'
+    logfile = open(logPath, 'w')
 
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST()
+    mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
-    i = 5
-    results_raw = Classifier.nn_classify(mnist_dataSet_raw, i, 'uniform')
-    results_2d = Classifier.nn_classify(mnist_dataSet_2d, i, 'uniform')
+
+    results_raw = Classifier.nn_classify(mnist_dataSet_raw, neighbors, 'uniform')
+    results_2d = Classifier.nn_classify(mnist_dataSet_2d, neighbors, 'uniform')
 
     # Print Results
-    print(classification_report(mnist_dataSet_raw.test_labels, results_raw))
-    print(classification_report(mnist_dataSet_2d.test_labels, results_2d))
+    print(classification_report(mnist_dataSet_raw.test_labels, results_raw), file=logfile)
+    print(classification_report(mnist_dataSet_2d.test_labels, results_2d), file=logfile)
 
     # Visualize Confusion Matrix
-    confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_raw.test_labels, results_raw, f"{figureTitle} (784D, n={i})")
-    confplt.savefig(f"{filePrefix}-{i}-confusion-784d.png")
+    confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_raw.test_labels, results_raw, f"{figureTitle} (784D)")
+    confplt.savefig(f"{figurePrefix}-confusion-784d.png")
 
-    confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_2d.test_labels, results_2d, f"{figureTitle} (2D, n={i})")
-    confplt.savefig(f"{filePrefix}-{i}-confusion-2d.png")
+    confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_2d.test_labels, results_2d, f"{figureTitle} (2D)")
+    confplt.savefig(f"{figurePrefix}-confusion-2d.png")
 
 
 
