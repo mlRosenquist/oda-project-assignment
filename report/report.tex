@@ -1,28 +1,48 @@
-\documentclass[12pt,twocolumn]{article}
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
 \usepackage{graphicx}
-\usepackage[
-backend=biber,
-style=alphabetic,
-sorting=ynt
-]{biblatex}
-\usepackage{listings}[multicols=2]
 \usepackage{hyperref}
-\addbibresource[]{misc/references.bib}
-% URL trimmer 
-\toks0\expandafter{\biburlsetup}
-\edef\biburlsetup{\the\toks0 \Urlmuskip =0mu\relax}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{lipsum}                     
+\usepackage{xargs}                      
+\usepackage[pdftex,dvipsnames, table]{xcolor}  
+\usepackage[table]{xcolor}
+\usepackage{float}
+\rowcolors{2}{gray!10}{white}
 
+\newcommand{\titlecol}{\cellcolor{gray!30}}
+
+% 
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unfinished}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
 
 \begin{document}
+\title{Image Analysis\\
+{\footnotesize Optimization and Data Analytics mini-project}}
 
-\input{contents/frontpage.tex}
-\onecolumn
-\tableofcontents
-\newpage
+\author{\IEEEauthorblockN{Morten Lyng Rosenquist}
+\IEEEauthorblockA{\textit{Faculty of Technical Sciences} \\
+\textit{Aarhus University}\\
+Aarhus, Denmark \\
+201706031}
+}
 
-\twocolumn
-\section{Abstract}
-\input{contents/abstract.tex}
+\maketitle
+
+\begin{abstract}
+\unfinished{Write abstract}
+\end{abstract}
+
+\begin{IEEEkeywords}
+\unfinished{Insert keywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
 
 \section{Introduction}
 \input{contents/introduction.tex}
@@ -30,12 +50,17 @@ sorting=ynt
 \section{Methods}
 \input{contents/methods.tex}
 
+\section{Datasets}
+\input{contents/datasets.tex}
+
 \section{Results}
 \input{contents/results.tex}
+
 
 \section{Conclusion}
 \input{contents/conclusion.tex}
 
 \onecolumn
-\printbibliography
+\newpage
+\listoftodos[Notes]
 \end{document}
