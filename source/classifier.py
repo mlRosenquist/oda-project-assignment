@@ -34,20 +34,23 @@ class Classifier:
 
     @staticmethod
     def nn_classify(dataSet: DataSet, neighbors, weights) -> np.ndarray:
-        model = KNeighborsClassifier(neighbors, weights=weights)
+        model = KNeighborsClassifier(neighbors, weights=weights, n_jobs=-1)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
-    def perceptron_bp_classify(dataSet: DataSet, eta, learning_rate):
-        model = SGDClassifier(loss='hinge', alpha=0, learning_rate=learning_rate, eta0=eta)
+    def perceptron_bp_classify(dataSet: DataSet, eta, learning_rate, margin):
+        model = SGDClassifier(loss='hinge', n_jobs=-1)
+        hinge = model.loss_functions['hinge']
+        model.loss_function_ = (hinge[0], margin)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
-    def perceptron_mse_classify(dataSet: DataSet, eta, learning_rate):
-        model = SGDClassifier(loss='squared_error', alpha=0, learning_rate=learning_rate, eta0=eta, max_iter=1000)
-
+    def perceptron_mse_classify(dataSet: DataSet, eta, learning_rate, margin):
+        model = SGDClassifier(loss='squared_error', alpha=0, learning_rate=learning_rate, eta0=eta, n_jobs=-1)
+        hinge = model.loss_functions['hinge']
+        model.loss_function_ = (hinge[0], margin)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)

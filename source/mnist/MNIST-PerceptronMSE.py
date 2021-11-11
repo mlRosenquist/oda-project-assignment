@@ -54,8 +54,8 @@ if __name__ == '__main__':
     mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
-    results_raw = Classifier.perceptron_mse_classify(mnist_dataSet_raw, 0.002, 'adaptive')
-    results_2d = Classifier.perceptron_mse_classify(mnist_dataSet_2d, 0.425, 'adaptive')
+    results_raw = Classifier.perceptron_mse_classify(mnist_dataSet_raw, 0.002, 'adaptive', 5)
+    results_2d = Classifier.perceptron_mse_classify(mnist_dataSet_2d, 0.425, 'adaptive', 10)
 
     # Print Results
     print(classification_report(mnist_dataSet_raw.test_labels, results_raw), file=logfile)

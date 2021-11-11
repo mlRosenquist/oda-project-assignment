@@ -54,8 +54,8 @@ if __name__ == '__main__':
     orl_dataSet_raw = Utility.load_ORL("data\\")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
-    results_raw = Classifier.perceptron_mse_classify(orl_dataSet_raw, 0.001, 'invscaling')
-    results_2d = Classifier.perceptron_mse_classify(orl_dataSet_2d, 0.425, 'adaptive')
+    results_raw = Classifier.perceptron_mse_classify(orl_dataSet_raw, 0.001, 'adaptive', 10)
+    results_2d = Classifier.perceptron_mse_classify(orl_dataSet_2d, 0.1, 'adaptive', 5)
 
     # Print Results
     print(classification_report(orl_dataSet_raw.test_labels, results_raw), file=logfile)
