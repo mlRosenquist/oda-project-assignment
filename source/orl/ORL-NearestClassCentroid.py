@@ -37,7 +37,6 @@ def tuneHyperParameters():
     grid_predictions = grid.predict(orl_dataSet_2d.test_images)
     print(classification_report(orl_dataSet_2d.test_labels, grid_predictions))
 
-tuneHyperParameters()
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "ORL - Nearest class centroid"

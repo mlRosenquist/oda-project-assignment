@@ -12,6 +12,13 @@
 \usepackage{float}
 \usepackage{subcaption}
 
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource[]{misc/references.bib}
+
 \rowcolors{2}{gray!10}{white}
 
 \newcommand{\titlecol}{\cellcolor{gray!30}}
@@ -67,6 +74,10 @@ component, formatting, style, styling, insert
 \onecolumn
 \newpage
 
-\unfinished{Write readmes}
+\onecolumn
+\printbibliography
+
+\newpage
 \listoftodos[Notes]
+
 \end{document}

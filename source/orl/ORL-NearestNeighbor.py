@@ -35,7 +35,6 @@ def tuneHyperParameters():
     grid.fit(orl_dataSet_2d.train_images, orl_dataSet_2d.train_labels)
     print(grid.best_params_)
 
-tuneHyperParameters()
 if __name__ == '__main__':
     # Visualization info
     figureTitle = "ORL - Nearest neighbor"
