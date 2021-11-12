@@ -1,4 +1,5 @@
 import os
+import time
 
 import numpy as np
 from matplotlib import pyplot as plt
@@ -22,7 +23,7 @@ def tuneHyperParameters():
     param_grid = {
         'alpha': [0],
         'loss': ['hinge'],
-        'eta0': [0.00037, 0.00025, 0.0002],
+        'eta0': [0.1, 0.01, 0.001, 0.0001, 0.00001],
         'learning_rate': ['constant', 'invscaling', 'adaptive']
                   }
 
@@ -34,7 +35,7 @@ def tuneHyperParameters():
     param_grid = {
         'alpha': [0],
         'loss': ['hinge'],
-        'eta0': [0.45, 0.4, 0.35,],
+        'eta0': [0.1, 0.01, 0.001, 0.0001, 0.00001],
         'learning_rate': ['constant', 'invscaling', 'adaptive']
     }
 
@@ -55,12 +56,18 @@ if __name__ == '__main__':
     orl_dataSet_raw = Utility.load_ORL("data\\")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
-    results_raw = Classifier.perceptron_bp_classify(orl_dataSet_raw, 0.35, 'adaptive')
-    results_2d = Classifier.perceptron_bp_classify(orl_dataSet_2d, 0.00037, 'adaptive')
+    start = time.time()
+    results_raw = Classifier.perceptron_bp_classify(orl_dataSet_raw, 0.01, 'adaptive')
+    stop = time.time()
+    print(f"Training and prediction time for {classifierName} : {stop - start}s", file=logfile)
 
+    start = time.time()
+    results_2d = Classifier.perceptron_bp_classify(orl_dataSet_2d, 0.1, 'invscaling')
+    stop = time.time()
+    print(f"Training and prediction time for {classifierName} : {stop - start}s", file=logfile)
     # Print Results
-    print(classification_report(orl_dataSet_raw.test_labels, results_raw), file=logfile)
-    print(classification_report(orl_dataSet_2d.test_labels, results_2d), file=logfile)
+    print(classification_report(orl_dataSet_raw.test_labels, results_raw, digits=4), file=logfile)
+    print(classification_report(orl_dataSet_2d.test_labels, results_2d, digits=4), file=logfile)
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(orl_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")

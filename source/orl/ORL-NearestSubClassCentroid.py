@@ -1,4 +1,5 @@
 import os
+import time
 
 from matplotlib import pyplot as plt
 from sklearn import metrics
@@ -20,31 +21,38 @@ def tuneHyperParameters():
                   }
 
 if __name__ == '__main__':
-    # Visualization info
-    figureTitle = "ORL - Nearest sub-class centroid"
-    classifierName = "nearestSubClassCentroid"
-    subClasses = 5
-    figurePrefix = f'pictures\\{classifierName}-{subClasses}'
-    logPath = f'logs\\{classifierName}-{subClasses}-log.txt'
-    logfile = open(logPath, 'w')
+    for subClasses in [2, 3, 5]:
+        # Visualization info
+        figureTitle = "ORL - Nearest sub-class centroid"
+        classifierName = "nearestSubClassCentroid"
+        figurePrefix = f'pictures\\{classifierName}-{subClasses}'
+        logPath = f'logs\\{classifierName}-{subClasses}-log.txt'
+        logfile = open(logPath, 'w')
 
-    # Load data sets
-    orl_dataSet_raw = Utility.load_ORL("data\\")
-    orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
+        # Load data sets
+        orl_dataSet_raw = Utility.load_ORL("data\\")
+        orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
-    results_raw = Classifier.nsc_classify(orl_dataSet_raw, subClasses)
-    results_2d = Classifier.nsc_classify(orl_dataSet_2d, subClasses)
+        start = time.time()
+        results_raw = Classifier.nsc_classify(orl_dataSet_raw, subClasses)
+        stop = time.time()
+        print(f"Training and prediction time for {classifierName} : {stop - start}s", file=logfile)
 
-    # Print Results
-    print(classification_report(orl_dataSet_raw.test_labels, results_raw), file=logfile)
-    print(classification_report(orl_dataSet_2d.test_labels, results_2d), file=logfile)
+        start = time.time()
+        results_2d = Classifier.nsc_classify(orl_dataSet_2d, subClasses)
+        stop = time.time()
+        print(f"Training and prediction time for {classifierName} 2d: {stop - start}s", file=logfile)
 
-    # Visualize Confusion Matrix
-    confplt = DataVisualization.ConfusionMatrix(orl_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")
-    confplt.savefig(f'{figurePrefix}-confusion-784d.png')
+        # Print Results
+        print(classification_report(orl_dataSet_raw.test_labels, results_raw, digits=4), file=logfile)
+        print(classification_report(orl_dataSet_2d.test_labels, results_2d, digits=4), file=logfile)
 
-    confplt = DataVisualization.ConfusionMatrix(orl_dataSet_2d.test_labels, results_2d, figureTitle + " (2D)")
-    confplt.savefig(f'{figurePrefix}-confusion-2d.png')
+        # Visualize Confusion Matrix
+        confplt = DataVisualization.ConfusionMatrix(orl_dataSet_raw.test_labels, results_raw, figureTitle + " (784D)")
+        confplt.savefig(f'{figurePrefix}-confusion-784d.png')
+
+        confplt = DataVisualization.ConfusionMatrix(orl_dataSet_2d.test_labels, results_2d, figureTitle + " (2D)")
+        confplt.savefig(f'{figurePrefix}-confusion-2d.png')
 
 
 

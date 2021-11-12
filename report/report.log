@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.6)  10 NOV 2021 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.11.6)  12 NOV 2021 10:18
 entering extended mode
 **c:/Users/MLR/source/python-repos/oda-project-assignment/report/report.tex
 (c:/Users/MLR/source/python-repos/oda-project-assignment/report/report.tex
@@ -367,13 +367,42 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box57
 \@float@everytoks=\toks30
 \@floatcapt=\box58
+) (C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+ (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen179
+\captionmargin@=\dimen180
+\captionwidth=\dimen181
+\caption@tempdima=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1139.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count299
+\c@subtable=\count300
 ) (C:\Program Files\MiKTeX\tex/latex/todonotes\todonotes.sty
 Package: todonotes 2021/06/04 v1.1.5 Todonotes source and documentation.
 Package: todonotes 2021/06/04
  (C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen179
-\pgfutil@tempdimb=\dimen180
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
  (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box59
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
@@ -388,26 +417,26 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen181
-\pgf@y=\dimen182
-\pgf@xa=\dimen183
-\pgf@ya=\dimen184
-\pgf@xb=\dimen185
-\pgf@yb=\dimen186
-\pgf@xc=\dimen187
-\pgf@yc=\dimen188
-\pgf@xd=\dimen189
-\pgf@yd=\dimen190
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
+\pgf@xd=\dimen196
+\pgf@yd=\dimen197
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count297
-\c@pgf@countb=\count298
-\c@pgf@countc=\count299
-\c@pgf@countd=\count300
+\c@pgf@counta=\count301
+\c@pgf@countb=\count302
+\c@pgf@countc=\count303
+\c@pgf@countd=\count304
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count301
+\pgf@sys@id@count=\count305
  (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -418,59 +447,59 @@ File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 ))) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count302
-\pgfsyssoftpath@bigbuffer@items=\count303
+\pgfsyssoftpath@smallbuffer@items=\count306
+\pgfsyssoftpath@bigbuffer@items=\count307
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen191
-\pgfmath@count=\count304
+\pgfmath@dimen=\dimen198
+\pgfmath@count=\count308
 \pgfmath@box=\box60
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
 \pgfmath@stack@operation=\toks40
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex))) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count305
+\c@pgfmathroundto@lastzeros=\count309
 )) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen192
-\pgf@picmaxx=\dimen193
-\pgf@picminy=\dimen194
-\pgf@picmaxy=\dimen195
-\pgf@pathminx=\dimen196
-\pgf@pathmaxx=\dimen197
-\pgf@pathminy=\dimen198
-\pgf@pathmaxy=\dimen199
-\pgf@xx=\dimen256
-\pgf@xy=\dimen257
-\pgf@yx=\dimen258
-\pgf@yy=\dimen259
-\pgf@zx=\dimen260
-\pgf@zy=\dimen261
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen262
-\pgf@path@lasty=\dimen263
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen264
-\pgf@shorten@start@additional=\dimen265
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count306
+\pgf@picture@serial@count=\count310
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen266
+\pgflinewidth=\dimen273
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen267
-\pgf@pt@y=\dimen268
-\pgf@pt@temp=\dimen269
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
@@ -479,12 +508,12 @@ File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen270
+\pgfarrowsep=\dimen277
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen271
-\pgf@sys@shading@range@num=\count307
-\pgf@shadingcount=\count308
+\pgf@max=\dimen278
+\pgf@sys@shading@range@num=\count311
+\pgf@shadingcount=\count312
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
@@ -505,100 +534,100 @@ File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen272
-\pgf@nodesepend=\dimen273
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
 ) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
-\pgffor@iter=\dimen274
-\pgffor@skip=\dimen275
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
 \pgffor@stack=\toks41
 \pgffor@toks=\toks42
 )) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count309
-\pgfplotmarksize=\dimen276
+\pgf@plot@mark@count=\count313
+\pgfplotmarksize=\dimen283
 )
-\tikz@lastx=\dimen277
-\tikz@lasty=\dimen278
-\tikz@lastxsaved=\dimen279
-\tikz@lastysaved=\dimen280
-\tikz@lastmovetox=\dimen281
-\tikz@lastmovetoy=\dimen282
-\tikzleveldistance=\dimen283
-\tikzsiblingdistance=\dimen284
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
 \tikz@figbox=\box66
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
 \tikz@tempbox@bg=\box69
-\tikztreelevel=\count310
-\tikznumberofchildren=\count311
-\tikznumberofcurrentchild=\count312
-\tikz@fig@count=\count313
+\tikztreelevel=\count314
+\tikznumberofchildren=\count315
+\tikznumberofcurrentchild=\count316
+\tikz@fig@count=\count317
  (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count314
-\pgfmatrixcurrentcolumn=\count315
-\pgf@matrix@numberofcolumns=\count316
+\pgfmatrixcurrentrow=\count318
+\pgfmatrixcurrentcolumn=\count319
+\pgf@matrix@numberofcolumns=\count320
 )
-\tikz@expandcount=\count317
+\tikz@expandcount=\count321
  (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count318
-\calc@Bcount=\count319
-\calc@Adimen=\dimen285
-\calc@Bdimen=\dimen286
+\calc@Acount=\count322
+\calc@Bcount=\count323
+\calc@Adimen=\dimen292
+\calc@Bdimen=\dimen293
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count320
+\calc@Ccount=\count324
 \calc@Cskip=\skip61
 )
-\c@@todonotes@numberoftodonotes=\count321
+\c@@todonotes@numberoftodonotes=\count325
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 -- Lines per column: 56 (exact).
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen287
+\scratchcounter=\count326
+\scratchdimen=\dimen294
 \scratchbox=\box70
-\nofMPsegments=\count323
-\nofMParguments=\count324
+\nofMPsegments=\count327
+\nofMParguments=\count328
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen288
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen295
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
 \everyMPtoPDFconversion=\toks44
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -606,7 +635,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 27.
  (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
@@ -614,28 +643,88 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count328
+\c@section@level=\count332
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
  (report.out) (report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 25.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 27.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 39.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 41.
 
 LaTeX Warning: Marginpar on page 1 moved.
 
 (contents/introduction.tex
+Overfull \hbox (12.91974pt too wide) in paragraph at lines 2--2
+[][][]\OT1/ptm/m/n/5 Introduction 
+ []
+
+
+Overfull \hbox (2.23491pt too wide) in paragraph at lines 2--2
+\OT1/ptm/m/n/5 vanced 
+ []
+
+
+Overfull \hbox (7.21983pt too wide) in paragraph at lines 2--2
+\OT1/ptm/m/n/5 proaches.[]  
+ []
+
+
+Overfull \hbox (12.91974pt too wide) in paragraph at lines 2--2
+[][][]\OT1/ptm/m/n/5 Introduction 
+ []
+
+
+Overfull \hbox (2.23491pt too wide) in paragraph at lines 2--2
+\OT1/ptm/m/n/5 vanced 
+ []
+
+
+Overfull \hbox (7.21983pt too wide) in paragraph at lines 2--2
+\OT1/ptm/m/n/5 proaches.[]  
+ []
+
 
 LaTeX Warning: Marginpar on page 1 moved.
 
-) (contents/methods.tex
+
+Overfull \hbox (11.52966pt too wide) in paragraph at lines 4--4
+[][][]\OT1/ptm/m/n/5 Description 
+ []
+
+
+Overfull \hbox (5.13974pt too wide) in paragraph at lines 4--4
+\OT1/ptm/m/n/5 schemes 
+ []
+
+
+Overfull \hbox (1.39479pt too wide) in paragraph at lines 4--4
+\OT1/ptm/m/n/5 ments.[]  
+ []
+
+
+Overfull \hbox (11.52966pt too wide) in paragraph at lines 4--4
+[][][]\OT1/ptm/m/n/5 Description 
+ []
+
+
+Overfull \hbox (5.13974pt too wide) in paragraph at lines 4--4
+\OT1/ptm/m/n/5 schemes 
+ []
+
+
+Overfull \hbox (1.39479pt too wide) in paragraph at lines 4--4
+\OT1/ptm/m/n/5 ments.[]  
+ []
+
 
 LaTeX Warning: Marginpar on page 1 moved.
 
@@ -643,28 +732,28 @@ LaTeX Warning: Marginpar on page 1 moved.
 
 LaTeX Warning: Citation `orl_images' on page 1 undefined on input line 4.
 
-<../source/orl/pictures/image-before-pca.png, id=47, 325.215pt x 289.08pt>
+<../source/orl/pictures/image-before-pca.png, id=51, 325.215pt x 289.08pt>
 File: ../source/orl/pictures/image-before-pca.png Graphic file (type png)
 <use ../source/orl/pictures/image-before-pca.png>
 Package pdftex.def Info: ../source/orl/pictures/image-before-pca.png  used on input line 8.
 (pdftex.def)             Requested size: 176.39923pt x 156.80222pt.
-<../source/mnist/pictures/image-before-pca.png, id=50, 542.025pt x 289.08pt>
+<../source/mnist/pictures/image-before-pca.png, id=54, 542.025pt x 289.08pt>
 File: ../source/mnist/pictures/image-before-pca.png Graphic file (type png)
 <use ../source/mnist/pictures/image-before-pca.png>
 Package pdftex.def Info: ../source/mnist/pictures/image-before-pca.png  used on input line 18.
 (pdftex.def)             Requested size: 176.39923pt x 94.07779pt.
-) (contents/results.tex
-<../source/orl/pictures/image-reconstructed-pca.png, id=55, 325.215pt x 289.08pt>
+) (contents/methods.tex) (contents/results.tex
+<../source/orl/pictures/image-reconstructed-pca.png, id=59, 325.215pt x 289.08pt>
 File: ../source/orl/pictures/image-reconstructed-pca.png Graphic file (type png)
 <use ../source/orl/pictures/image-reconstructed-pca.png>
 Package pdftex.def Info: ../source/orl/pictures/image-reconstructed-pca.png  used on input line 8.
 (pdftex.def)             Requested size: 176.39923pt x 156.80222pt.
-<../source/mnist/pictures/image-reconstructed-pca.png, id=56, 542.025pt x 289.08pt>
+<../source/mnist/pictures/image-reconstructed-pca.png, id=60, 542.025pt x 289.08pt>
 File: ../source/mnist/pictures/image-reconstructed-pca.png Graphic file (type png)
 <use ../source/mnist/pictures/image-reconstructed-pca.png>
 Package pdftex.def Info: ../source/mnist/pictures/image-reconstructed-pca.png  used on input line 15.
 (pdftex.def)             Requested size: 176.39923pt x 94.07779pt.
-<../source/mnist/pictures/mnist-scatter.png, id=58, 462.528pt x 346.896pt>
+<../source/mnist/pictures/mnist-scatter.png, id=62, 462.528pt x 346.896pt>
 File: ../source/mnist/pictures/mnist-scatter.png Graphic file (type png)
 <use ../source/mnist/pictures/mnist-scatter.png>
 Package pdftex.def Info: ../source/mnist/pictures/mnist-scatter.png  used on input line 24.
@@ -672,53 +761,96 @@ Package pdftex.def Info: ../source/mnist/pictures/mnist-scatter.png  used on inp
  [1{C:/Users/MLR/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.30 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.30 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.30 
-      <../source/orl/pictures/image-before-pca.png> <../source/mnist/pictures/image-before-pca.png> <../source/orl/pictures/image-reconstructed-pca.png>]
-<../source/orl/pictures/orl-scatter-original-first.png, id=80, 542.025pt x 289.08pt>
+ <../source/orl/pictures/image-before-pca.png> <../source/mnist/pictures/image-before-pca.png> <../source/orl/pictures/image-reconstructed-pca.png>]
+<../source/orl/pictures/orl-scatter-original-first.png, id=87, 542.025pt x 289.08pt>
 File: ../source/orl/pictures/orl-scatter-original-first.png Graphic file (type png)
 <use ../source/orl/pictures/orl-scatter-original-first.png>
-Package pdftex.def Info: ../source/orl/pictures/orl-scatter-original-first.png  used on input line 33.
+Package pdftex.def Info: ../source/orl/pictures/orl-scatter-original-first.png  used on input line 34.
 (pdftex.def)             Requested size: 252.0pt x 134.39874pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+<../source/orl/pictures/orl-scatter-original-second.png, id=88, 542.025pt x 289.08pt>
+File: ../source/orl/pictures/orl-scatter-original-second.png Graphic file (type png)
+<use ../source/orl/pictures/orl-scatter-original-second.png>
+Package pdftex.def Info: ../source/orl/pictures/orl-scatter-original-second.png  used on input line 41.
+(pdftex.def)             Requested size: 252.0pt x 134.39874pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (128.65414pt too wide) in paragraph at lines 45--82
- [][] 
+<../source/mnist/pictures/nearestClassCentroid-confusion-784d.png, id=90, 462.528pt x 346.896pt>
+File: ../source/mnist/pictures/nearestClassCentroid-confusion-784d.png Graphic file (type png)
+<use ../source/mnist/pictures/nearestClassCentroid-confusion-784d.png>
+Package pdftex.def Info: ../source/mnist/pictures/nearestClassCentroid-confusion-784d.png  used on input line 99.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png, id=91, 462.528pt x 346.896pt>
+File: ../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png Graphic file (type png)
+<use ../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png>
+Package pdftex.def Info: ../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png  used on input line 105.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/mnist/pictures/perceptronBP-confusion-784d.png, id=92, 462.528pt x 346.896pt>
+File: ../source/mnist/pictures/perceptronBP-confusion-784d.png Graphic file (type png)
+<use ../source/mnist/pictures/perceptronBP-confusion-784d.png>
+Package pdftex.def Info: ../source/mnist/pictures/perceptronBP-confusion-784d.png  used on input line 111.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/mnist/pictures/nearestClassCentroid-confusion-2d.png, id=93, 462.528pt x 346.896pt>
+File: ../source/mnist/pictures/nearestClassCentroid-confusion-2d.png Graphic file (type png)
+<use ../source/mnist/pictures/nearestClassCentroid-confusion-2d.png>
+Package pdftex.def Info: ../source/mnist/pictures/nearestClassCentroid-confusion-2d.png  used on input line 118.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png, id=94, 462.528pt x 346.896pt>
+File: ../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png Graphic file (type png)
+<use ../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png>
+Package pdftex.def Info: ../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png  used on input line 124.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/mnist/pictures/perceptronBP-confusion-2d.png, id=95, 462.528pt x 346.896pt>
+File: ../source/mnist/pictures/perceptronBP-confusion-2d.png Graphic file (type png)
+<use ../source/mnist/pictures/perceptronBP-confusion-2d.png>
+Package pdftex.def Info: ../source/mnist/pictures/perceptronBP-confusion-2d.png  used on input line 130.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/orl/pictures/nearestClassCentroid-confusion-784d.png, id=96, 462.528pt x 346.896pt>
+File: ../source/orl/pictures/nearestClassCentroid-confusion-784d.png Graphic file (type png)
+<use ../source/orl/pictures/nearestClassCentroid-confusion-784d.png>
+Package pdftex.def Info: ../source/orl/pictures/nearestClassCentroid-confusion-784d.png  used on input line 141.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/orl/pictures/nearestNeighbor-5-confusion-784d.png, id=97, 462.528pt x 346.896pt>
+File: ../source/orl/pictures/nearestNeighbor-5-confusion-784d.png Graphic file (type png)
+<use ../source/orl/pictures/nearestNeighbor-5-confusion-784d.png>
+Package pdftex.def Info: ../source/orl/pictures/nearestNeighbor-5-confusion-784d.png  used on input line 147.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/orl/pictures/perceptronBP-confusion-784d.png, id=98, 462.528pt x 346.896pt>
+File: ../source/orl/pictures/perceptronBP-confusion-784d.png Graphic file (type png)
+<use ../source/orl/pictures/perceptronBP-confusion-784d.png>
+Package pdftex.def Info: ../source/orl/pictures/perceptronBP-confusion-784d.png  used on input line 153.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/orl/pictures/nearestClassCentroid-confusion-2d.png, id=99, 462.528pt x 346.896pt>
+File: ../source/orl/pictures/nearestClassCentroid-confusion-2d.png Graphic file (type png)
+<use ../source/orl/pictures/nearestClassCentroid-confusion-2d.png>
+Package pdftex.def Info: ../source/orl/pictures/nearestClassCentroid-confusion-2d.png  used on input line 160.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/orl/pictures/nearestNeighbor-5-confusion-2d.png, id=100, 462.528pt x 346.896pt>
+File: ../source/orl/pictures/nearestNeighbor-5-confusion-2d.png Graphic file (type png)
+<use ../source/orl/pictures/nearestNeighbor-5-confusion-2d.png>
+Package pdftex.def Info: ../source/orl/pictures/nearestNeighbor-5-confusion-2d.png  used on input line 166.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+<../source/orl/pictures/perceptronBP-confusion-2d.png, id=101, 462.528pt x 346.896pt>
+File: ../source/orl/pictures/perceptronBP-confusion-2d.png Graphic file (type png)
+<use ../source/orl/pictures/perceptronBP-confusion-2d.png>
+Package pdftex.def Info: ../source/orl/pictures/perceptronBP-confusion-2d.png  used on input line 172.
+(pdftex.def)             Requested size: 170.28094pt x 127.70903pt.
+) (contents/discussion.tex) (contents/conclusion.tex) [2 <../source/mnist/pictures/image-reconstructed-pca.png> <../source/mnist/pictures/mnist-scatter.png> <../source/orl/pictures/orl-scatter-original-first.png> <../source/orl/pictures/orl-scatter-original-second.png>] [3 <../source/mnist/pictures/nearestClassCentroid-confusion-784d.png> <../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png> <../source/mnist/pictures/perceptronBP-confusion-784d.png> <../source/mnist/pictures/nearestClassCentroid-confusion-2d.png> <../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png> <../source/mnist/pictures/perceptronBP-confusion-2d.png> <../source/orl/pictures/nearestClassCentroid-confusion-784d.png> <../source/orl/pictures/nearestNeighbor-5-confusion-784d.png> <../source/orl/pictures/perceptronBP-confusion-784d.png> <../source/orl/pictures/nearestClassCentroid-confusion-2d.png> <../source/orl/pictures/nearestNeighbor-5-confusion-2d.png> <../source/orl/pictures/perceptronBP-confusion-2d.png>] [4]
+Overfull \hbox (4.85977pt too wide) in paragraph at lines 70--70
+\OT1/ptm/m/n/5 readmes[]  
  []
 
-) (contents/conclusion.tex) [2pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.63 \onecolumn
-               pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.63 \onecolumn
-               pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.63 \onecolumn
-               pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.63 \onecolumn
-                <../source/mnist/pictures/image-reconstructed-pca.png> <../source/mnist/pictures/mnist-scatter.png> <../source/orl/pictures/orl-scatter-original-first.png>] (report.tdo)
+
+Overfull \hbox (4.85977pt too wide) in paragraph at lines 70--70
+\OT1/ptm/m/n/5 readmes[]  
+ []
+
+(report.tdo)
 \tf@tdo=\write5
 \openout5 = `report.tdo'.
 
@@ -734,27 +866,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[5
 
 ] (report.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5D75C14C499E75D885EB2476E7B97D26;995.
+(rerunfilecheck)             Checksum: 93AD02B6E4863056285D67ECB85D20EA;1094.
  ) 
 Here is how much of TeX's memory you used:
- 21867 strings out of 478864
- 401308 string characters out of 2858523
- 799908 words of memory out of 3000000
- 39339 multiletter control sequences out of 15000+600000
- 441505 words of font info for 99 fonts, out of 8000000 for 9000
+ 23299 strings out of 478864
+ 432934 string characters out of 2858523
+ 827316 words of memory out of 3000000
+ 40744 multiletter control sequences out of 15000+600000
+ 440859 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,9n,97p,639b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,9n,131p,639b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (3 pages, 367258 bytes).
+Output written on report.pdf (5 pages, 874408 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,3 +2,4 @@
 [0m2021.11.10 16:24:26 INFO  time: initialize in 1.62s[0m
 [0m2021.11.10 16:24:26 WARN  Build server is not auto-connectable.[0m
 [0m2021.11.10 16:24:26 WARN  no build tool detected in workspace 'C:\Users\MLR\source\python-repos\oda-project-assignment'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.11.10 22:45:42 INFO  shutting down Metals[0m

@@ -1,4 +1,5 @@
 import os
+import time
 
 from matplotlib import pyplot as plt
 from sklearn import metrics
@@ -25,7 +26,7 @@ def tuneHyperParameters():
         'learning_rate': ['constant', 'invscaling', 'adaptive']
                   }
 
-    grid = GridSearchCV(SGDClassifier(), param_grid, refit=True, n_jobs=-1)
+    grid = GridSearchCV(SGDClassifier(), param_grid, refit=True, n_jobs=-1, verbose=3)
 
     grid.fit(mnist_dataSet_raw.train_images, mnist_dataSet_raw.train_labels)
     print(grid.best_params_)
@@ -33,11 +34,11 @@ def tuneHyperParameters():
     param_grid = {
         'alpha': [0],
         'loss': ['squared_error'],
-        'eta0': [0.1, 0.01, 0.001, 0.0001],
-        'learning_rate': ['constant', 'invscaling', 'adaptive']
+        'eta0': [0.05, 0.1, 0.25, 0.5],
+        'learning_rate': ['constant', 'invscaling', 'adaptive'],
     }
 
-    grid = GridSearchCV(SGDClassifier(), param_grid, refit=True, n_jobs=-1)
+    grid = GridSearchCV(SGDClassifier(), param_grid, refit=True, n_jobs=-1, verbose=3)
 
     grid.fit(mnist_dataSet_2d.train_images, mnist_dataSet_2d.train_labels)
     print(grid.best_params_)
@@ -54,12 +55,19 @@ if __name__ == '__main__':
     mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
-    results_raw = Classifier.perceptron_mse_classify(mnist_dataSet_raw, 0.002, 'adaptive', 5)
-    results_2d = Classifier.perceptron_mse_classify(mnist_dataSet_2d, 0.425, 'adaptive', 10)
+    start = time.time()
+    results_raw = Classifier.perceptron_mse_classify(mnist_dataSet_raw, 0.002, 'adaptive')
+    stop = time.time()
+    print(f"Training and prediction time for {classifierName} 2d: {stop - start}s", file=logfile)
+
+    start = time.time()
+    results_2d = Classifier.perceptron_mse_classify(mnist_dataSet_2d, 0.1, 'invscaling')
+    stop = time.time()
+    print(f"Training and prediction time for {classifierName} 2d: {stop - start}s", file=logfile)
 
     # Print Results
-    print(classification_report(mnist_dataSet_raw.test_labels, results_raw), file=logfile)
-    print(classification_report(mnist_dataSet_2d.test_labels, results_2d), file=logfile)
+    print(classification_report(mnist_dataSet_raw.test_labels, results_raw, digits=4), file=logfile)
+    print(classification_report(mnist_dataSet_2d.test_labels, results_2d, digits=4), file=logfile)
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_raw.test_labels, results_raw, f"{figureTitle} (784D)")

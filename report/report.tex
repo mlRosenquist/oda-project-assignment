@@ -10,6 +10,8 @@
 \usepackage[pdftex,dvipsnames, table]{xcolor}  
 \usepackage[table]{xcolor}
 \usepackage{float}
+\usepackage{subcaption}
+
 \rowcolors{2}{gray!10}{white}
 
 \newcommand{\titlecol}{\cellcolor{gray!30}}
@@ -47,20 +49,24 @@ component, formatting, style, styling, insert
 \section{Introduction}
 \input{contents/introduction.tex}
 
+\section{Databases}
+\input{contents/datasets.tex}
+
 \section{Methods}
 \input{contents/methods.tex}
-
-\section{Datasets}
-\input{contents/datasets.tex}
 
 \section{Results}
 \input{contents/results.tex}
 
+\section{Discussion}
+\input{contents/discussion.tex}
 
 \section{Conclusion}
 \input{contents/conclusion.tex}
 
 \onecolumn
 \newpage
+
+\unfinished{Write readmes}
 \listoftodos[Notes]
 \end{document}

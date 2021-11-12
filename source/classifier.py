@@ -39,18 +39,20 @@ class Classifier:
 
         return model.predict(dataSet.test_images)
 
-    def perceptron_bp_classify(dataSet: DataSet, eta, learning_rate, margin):
-        model = SGDClassifier(loss='hinge', n_jobs=-1)
-        hinge = model.loss_functions['hinge']
-        model.loss_function_ = (hinge[0], margin)
+    def perceptron_bp_classify(dataSet: DataSet, eta, learning_rate):
+        model = SGDClassifier(loss='hinge', n_jobs=-1, eta0=eta, learning_rate=learning_rate)
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
 
-    def perceptron_mse_classify(dataSet: DataSet, eta, learning_rate, margin):
-        model = SGDClassifier(loss='squared_error', alpha=0, learning_rate=learning_rate, eta0=eta, n_jobs=-1)
-        hinge = model.loss_functions['hinge']
-        model.loss_function_ = (hinge[0], margin)
+    def perceptron_mse_classify(dataSet: DataSet, eta, learning_rate):
+        model = SGDClassifier(loss='squared_error',
+                              alpha=0,
+                              learning_rate=learning_rate,
+                              eta0=eta,
+                              random_state=5,
+                              n_jobs=-1
+                              )
         model.fit(dataSet.train_images, dataSet.train_labels)
 
         return model.predict(dataSet.test_images)
@@ -63,7 +65,6 @@ class NearestSubclassCentroid():
         self.K = K
 
     def fit(self, X, y):
-        y = y.reshape((-1,))
         subrows = defaultdict(list)
         for i in range(len(y)):
             # Collect indices of exemplars for the given class label

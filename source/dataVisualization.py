@@ -29,6 +29,7 @@ class DataVisualization:
         disp = ConfusionMatrixDisplay.from_predictions(test_labels, result_labels)
         disp.plot(cmap=plt.cm.Blues, xticks_rotation=45)
         plt.title(title)
+        plt.locator_params(nbins=10)
         return plt
 
 if __name__ == '__main__':
@@ -103,12 +104,12 @@ if __name__ == '__main__':
     orl_dataSet_2d.train_labels = orl_dataSet_raw.train_labels
 
     ## Scatter plot first 20 original data
-    fig = DataVisualization.scatterPlot_2d(orl_dataSet_original_2d.test_images[0:60], orl_dataSet_original_2d.test_labels[0:60], "ORL first 20 original data", 'tab20')
+    fig = DataVisualization.scatterPlot_2d(orl_dataSet_original_2d.test_images[0:200], orl_dataSet_original_2d.test_labels[0:200], "ORL first 20 original data", 'tab20')
     fig.savefig(f'{orl_figurePath}orl-scatter-original-first.png')
     fig.close()
 
     ## Scatter plot last 20 original data
-    fig = DataVisualization.scatterPlot_2d(orl_dataSet_original_2d.test_images[61:120], orl_dataSet_original_2d.test_labels[61:120], "ORL last 20 original data", 'tab20')
+    fig = DataVisualization.scatterPlot_2d(orl_dataSet_original_2d.test_images[201:400], orl_dataSet_original_2d.test_labels[201:400], "ORL last 20 original data", 'tab20')
     fig.savefig(f'{orl_figurePath}orl-scatter-original-second.png')
     fig.close()
 

@@ -1,4 +1,5 @@
 import os
+import time
 
 import numpy as np
 from matplotlib import pyplot as plt
@@ -47,13 +48,18 @@ if __name__ == '__main__':
     mnist_dataSet_raw = Utility.load_MNIST("data\\")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
-
+    start = time.time()
     results_raw = Classifier.nn_classify(mnist_dataSet_raw, neighbors, 'uniform')
-    results_2d = Classifier.nn_classify(mnist_dataSet_2d, neighbors, 'uniform')
+    stop = time.time()
+    print(f"Training and prediction time for {classifierName} 2d: {stop - start}s", file=logfile)
 
+    start = time.time()
+    results_2d = Classifier.nn_classify(mnist_dataSet_2d, neighbors, 'uniform')
+    stop = time.time()
+    print(f"Training and prediction time for {classifierName} 2d: {stop - start}s", file=logfile)
     # Print Results
-    print(classification_report(mnist_dataSet_raw.test_labels, results_raw), file=logfile)
-    print(classification_report(mnist_dataSet_2d.test_labels, results_2d), file=logfile)
+    print(classification_report(mnist_dataSet_raw.test_labels, results_raw, digits=4), file=logfile)
+    print(classification_report(mnist_dataSet_2d.test_labels, results_2d, digits=4), file=logfile)
 
     # Visualize Confusion Matrix
     confplt = DataVisualization.ConfusionMatrix(mnist_dataSet_raw.test_labels, results_raw, f"{figureTitle} (784D)")

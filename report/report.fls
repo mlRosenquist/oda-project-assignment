@@ -625,6 +625,40 @@ INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\todonotes\todonotes.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\todonotes\todonotes.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\todonotes\todonotes.sty
@@ -935,10 +969,6 @@ INPUT .\contents\introduction.tex
 INPUT contents\introduction.tex
 INPUT .\contents\introduction.tex
 INPUT contents\introduction.tex
-INPUT .\contents\methods.tex
-INPUT contents\methods.tex
-INPUT .\contents\methods.tex
-INPUT contents\methods.tex
 INPUT .\contents\datasets.tex
 INPUT contents\datasets.tex
 INPUT .\contents\datasets.tex
@@ -957,6 +987,10 @@ INPUT ..\source\mnist\pictures\image-before-pca.png
 INPUT ..\source\mnist\pictures\image-before-pca.png
 INPUT ..\source\mnist\pictures\image-before-pca.png
 INPUT ..\source\mnist\pictures\image-before-pca.png
+INPUT .\contents\methods.tex
+INPUT contents\methods.tex
+INPUT .\contents\methods.tex
+INPUT contents\methods.tex
 INPUT .\contents\results.tex
 INPUT contents\results.tex
 INPUT .\contents\results.tex
@@ -1009,6 +1043,13 @@ INPUT ..\source\orl\pictures\orl-scatter-original-first.png
 INPUT ..\source\orl\pictures\orl-scatter-original-first.png
 INPUT ..\source\orl\pictures\orl-scatter-original-first.png
 INPUT ..\source\orl\pictures\orl-scatter-original-first.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
+INPUT ..\source\orl\pictures\orl-scatter-original-second.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -1032,12 +1073,99 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmrc7t.tfm
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\mnist\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-784d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestClassCentroid-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\nearestNeighbor-5-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT ..\source\orl\pictures\perceptronBP-confusion-2d.png
+INPUT .\contents\discussion.tex
+INPUT contents\discussion.tex
+INPUT .\contents\discussion.tex
+INPUT contents\discussion.tex
 INPUT .\contents\conclusion.tex
 INPUT contents\conclusion.tex
 INPUT .\contents\conclusion.tex
 INPUT contents\conclusion.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmrc7t.vf
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\report.tdo
 INPUT report.tdo
