@@ -1,8 +1,12 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 \usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = blue,
+            citecolor = black,
+            anchorcolor = blue]{hyperref}
+\usepackage{amsmath,amssymb,amsfonts, mathtools}
 \usepackage{algorithmic}
 \usepackage{textcomp}
 \usepackage{lipsum}                     
@@ -11,6 +15,7 @@
 \usepackage[table]{xcolor}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{stfloats}
 
 \usepackage[
 backend=biber,
@@ -45,12 +50,11 @@ Aarhus, Denmark \\
 \maketitle
 
 \begin{abstract}
-\unfinished{Write abstract}
+This paper analyze the Image Classification problem for the MNIST and ORL data set. The classifiers used are Nearest Class Centroid, Nearest Sub-Class Centroid, Nearest Neighbor, Perceptron using Backpropagation and Perceptron using MSE. The classification is performed on the sets with full features and the sets having their features reduced to two utilizing PCA. 
 \end{abstract}
 
 \begin{IEEEkeywords}
-\unfinished{Insert keywords}
-component, formatting, style, styling, insert
+classification, orl, mnist, pca, data analytics
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -62,6 +66,7 @@ component, formatting, style, styling, insert
 \section{Methods}
 \input{contents/methods.tex}
 
+\newpage
 \section{Results}
 \input{contents/results.tex}
 
@@ -71,13 +76,13 @@ component, formatting, style, styling, insert
 \section{Conclusion}
 \input{contents/conclusion.tex}
 
-\onecolumn
-\newpage
 
-\onecolumn
 \printbibliography
 
+\onecolumn
 \newpage
+\unfinished{Make document pretty}
+\unfinished{Update table}
 \listoftodos[Notes]
 
 \end{document}

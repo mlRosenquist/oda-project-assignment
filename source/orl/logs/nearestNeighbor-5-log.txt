@@ -1,5 +1,5 @@
-Training and prediction time for nearestNeighbor 2d: 0.01562356948852539s
-Training and prediction time for nearestNeighbor 2d: 0.015625476837158203s
+Training time for nearestNeighbor 2d: 0.001001119613647461s
+Training time for nearestNeighbor 2d: 0.0s
               precision    recall  f1-score   support
 
            1     0.3333    1.0000    0.5000         1

@@ -2,30 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df73d8bc-32ca-4c89-ada0-1f3d08b6be56" name="Changes" comment="Started on report">
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-boundary-train.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-boundary-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-boundary-train.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/contents/conclusion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/conclusion.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/contents/discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/discussion.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/contents/introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/contents/methods.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/methods.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/contents/results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/results.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/misc/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/misc/references.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.bcf" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.bcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.blg" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.fdb_latexmk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.fls" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.fls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.out" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.tdo" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tdo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-NearestNeighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-NearestNeighbor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-NearestSubClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-NearestSubClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronBP.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronBP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronMSE.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/MNIST-PerceptronMSE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestClassCentroid-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestClassCentroid-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/image-reconstructed-pca.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/image-reconstructed-pca.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/mnist-scatter.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/mnist-scatter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestNeighbor-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestNeighbor-5-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-2-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-2-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-3-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-3-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-5-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/logs/perceptronBP-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/perceptronBP-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/logs/perceptronMSE-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/perceptronMSE-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-784d.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestNeighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestNeighbor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-PerceptronBP.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-PerceptronBP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/ORL-PerceptronMSE.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-PerceptronMSE.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestClassCentroid-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestClassCentroid-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestNeighbor-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestNeighbor-5-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-784d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-2-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-2-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-3-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-3-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-5-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/logs/perceptronBP-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/perceptronBP-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/logs/perceptronMSE-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/perceptronMSE-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-784d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-784d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-784d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-2d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-784d.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +115,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
@@ -78,8 +137,8 @@
       <recent name="C:\Users\MLR\source\python-repos\oda-project-assignment\source\logs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ORL-NearestNeighbor">
-    <configuration name="MNIST-NearestClassCentroid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ORL-PerceptronBP">
+    <configuration name="MNIST-NearestNeighbor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="oda-project-assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -91,7 +150,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-NearestNeighbor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MNIST-NearestSubClassCentroid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-NearestSubClassCentroid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +201,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ORL-NearestClassCentroid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MNIST-PerceptronMSE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oda-project-assignment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/mnist/MNIST-PerceptronMSE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ORL-PerceptronBP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="oda-project-assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -133,49 +234,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/orl/ORL-NearestClassCentroid.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ORL-NearestNeighbor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="oda-project-assignment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/orl" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/orl/ORL-NearestNeighbor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dataVisualization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="oda-project-assignment" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/dataVisualization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/orl/ORL-PerceptronBP.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ORL-NearestNeighbor" />
-        <item itemvalue="Python.ORL-NearestClassCentroid" />
-        <item itemvalue="Python.MNIST-NearestClassCentroid" />
-        <item itemvalue="Python.dataVisualization" />
+        <item itemvalue="Python.ORL-PerceptronBP" />
+        <item itemvalue="Python.MNIST-PerceptronMSE" />
         <item itemvalue="Python.MNIST-PerceptronBP" />
+        <item itemvalue="Python.MNIST-NearestSubClassCentroid" />
+        <item itemvalue="Python.MNIST-NearestNeighbor" />
       </list>
     </recent_temporary>
   </component>
@@ -275,6 +334,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Looked at plotting PCA classified data" />
     <MESSAGE value="Restructure" />
     <MESSAGE value="Started on report" />
@@ -305,22 +365,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/source/orl/ORL-PerceptronBP.py</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/source/mnist/MNIST-NearestClassCentroid.py</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/source/mnist/MNIST-PerceptronBP.py</url>
-          <line>52</line>
+          <line>53</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/source/classifier.py</url>
-          <line>57</line>
+          <line>94</line>
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

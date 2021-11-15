@@ -1,7 +1,7 @@
 The performance of each classifier for both datasets will in this section be covered. 
 
 \subsection{PCA impact on data}
-Classification is performed both on the original data and on the data reduced to two dimensions using PCA. Illustrations of the data lost by reducing the dimensions can be seen on Figure \ref{fig:orl-images-reconstructed} for ORL and Figure \ref{fig:mnist-images-reconstructed} for MNIST. These figures are the same images illustrated on Figure \ref{fig:orl-images-raw} and Figure\ref{fig:mnist-images-raw}, but where PCA has been applied and thereafter retransformed to their original dimensionality.  
+Classification is performed both on the original data and on the data reduced to two dimensions using PCA. Illustrations of the data lost by reducing the dimensions can be seen on Figure \ref{fig:orl-images-reconstructed} for ORL and Figure \ref{fig:mnist-images-reconstructed} for MNIST. These figures are the same images illustrated on Figure \ref{fig:orl-images-raw} and Figure \ref{fig:mnist-images-raw}, but where PCA has been applied and thereafter retransformed to their original dimensionality.  
 
 \begin{figure}[htbp]
     \centering
@@ -45,7 +45,7 @@ As for the ORL data set there is 40 classes, which is hard to illustrate in a si
 
 \subsection{Classification}
 Each classifier, for both the original data and the PCA version of the data, have their hyperparameters tuned if relevant. Afterwards the classification is performed.  
-The accuracy of class predictions of the test data can be seen on Table \ref{tab:classifiers-performance}. Measurements of the time spent both training and testing can be seen for certain classifiers. 
+The accuracy of class predictions of the test data can be seen on Table \ref{tab:classifiers-performance}. Measurements of the time spent training can aswell be seen. 
 
 
 \begin{table*}[!htbp]
@@ -92,6 +92,7 @@ The accuracy of class predictions of the test data can be seen on Table \ref{tab
 \end{table*}
 
 \subsection{Visualization}
+Confusion matrices showing how certain classifiers performed when predicting labels for the test data can be seen on Figure \ref{fig:mnist-confusion} for the MNIST data set and on Figure \ref{fig:orl-confusion} for the ORL data set. 
 
 \begin{figure*}[htbp]
         \begin{subfigure}[b]{.33\linewidth}
@@ -134,7 +135,7 @@ The accuracy of class predictions of the test data can be seen on Table \ref{tab
         \caption{Confusion Matrices - MNIST}
         \label{fig:mnist-confusion}
 \end{figure*}
-
+ 
 \begin{figure*}[htbp]
         \begin{subfigure}[b]{.33\linewidth}
             \centering
@@ -176,4 +177,27 @@ The accuracy of class predictions of the test data can be seen on Table \ref{tab
         \caption{Confusion Matrices - ORL}
         \label{fig:orl-confusion}
 \end{figure*}
+
+Scatter plot figures including boundary lines can be seen for certain classifiers on Figure \ref{fig:mnist-boundary-ncc}-\ref{fig:mnist-boundary-pbp}. The figures illustrates the class's boundaries for the trained models. 
+
+\begin{figure}[htbp]
+        \centering
+        \includegraphics[width=1\columnwidth]{../source/mnist/pictures/nearestClassCentroid-boundary-train.png}
+        \caption{Boundary Lines - Nearest Centroid train data}
+        \label{fig:mnist-boundary-ncc}
+\end{figure}
+
+\begin{figure}
+        \centering
+        \includegraphics[width=1\columnwidth]{../source/mnist/pictures/nearestNeighbor-5-boundary-train.png}
+        \caption{Boundary Lines - Nearest Neighbor train data}
+        \label{fig:mnist-boundary-nn}
+\end{figure}
+
+\begin{figure}
+        \centering
+        \includegraphics[width=1\columnwidth]{../source/mnist/pictures/perceptronBP-boundary-train.png}
+        \caption{Boundary Lines - Perceptron using BP train data}
+        \label{fig:mnist-boundary-pbp}
+\end{figure}
 

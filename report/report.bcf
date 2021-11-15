@@ -2344,7 +2344,13 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">misc/references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">orl_images</bcf:citekey>
+    <bcf:citekey order="1">ai-course-notes</bcf:citekey>
+    <bcf:citekey order="2">ai-course-notes</bcf:citekey>
+    <bcf:citekey order="3">nearest-neighbor</bcf:citekey>
+    <bcf:citekey order="4">ai-course-notes</bcf:citekey>
+    <bcf:citekey order="5">ai-course-notes</bcf:citekey>
+    <bcf:citekey order="6">ai-course-notes</bcf:citekey>
+    <bcf:citekey order="7">orl_images</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">
