@@ -1,7 +1,7 @@
 This thesis will analyze the Image Classification problem. Utilizing only supervised learning algorithms This revolves around training a classification model with train images and thereafter being able predict correct classes for test images. The computer doesn't see the physical images as humans will, instead it sees a vector or matrix of pixels. The used classification models is described in the following sections.     
 
 \subsection{Nearest Centroid}
-Nearest Centroid, also called Nearest Prototype, calculates the centroids of each class and then predicts an observation to a class whose mean is the closest. Given a set of N samples, where each sample is represented by a vector $\mathbf{x}_i\in\mathbb{R}^D$ and the corresponding labels are denoted as $l_i$. The centroids are denoted as $\mathbf{\mu}_k, k=1,...,K$ where $K$ is the amount of classes. Then during training the centroids are defined\cite{ai-course-notes}: 
+Nearest Centroid, also called Nearest Prototype, calculates the centroids of each class and then predicts an observation to a class whose mean is the closest. Given a set of N samples, where each sample is represented by a vector $\mathbf{x}_i\in\mathbbm{R}^D$ and the corresponding labels are denoted as $l_i$. The centroids are denoted as $\mathbf{\mu}_k, k=1,...,K$ where $K$ is the amount of classes. Then during training the centroids are defined\cite{ai-course-notes}: 
 
 \begin{equation}
     \mathbf{\mu}_k = \frac{1}{N_k} \sum_{i,l_i=k}{\mathbf{x}_i}, k=1,...,K, 
@@ -14,7 +14,7 @@ Having calculated the centroids, a new observation $\mathbf{x}_*$ can be calcula
 \end{equation}
 
 \subsection{Nearest sub-class Centroid}
-Nearest sub-class centroid is similar to the Nearest Centroid. It introduces a new sub-class element, that divides each class in a set amount of subclasses. Then during training the centroids of the subclasses are calculated. During predictions an observation is classified to the class which subclass it had the minimal distance. Given a set of N samples, where each sample is represented by a vector $\mathbf{x}_i\in\mathbb{R}^D$ and the corresponding labels are denoted as $l_i$. Having a sub classes $m$ of class $c_k$ the centroids of each class can then be calculated\cite{ai-course-notes}: 
+Nearest sub-class centroid is similar to the Nearest Centroid. It introduces a new sub-class element, that divides each class in a set amount of subclasses. Then during training the centroids of the subclasses are calculated. During predictions an observation is classified to the class which subclass it had the minimal distance. Given a set of N samples, where each sample is represented by a vector $\mathbf{x}_i\in\mathbbm{R}^D$ and the corresponding labels are denoted as $l_i$. Having a sub classes $m$ of class $c_k$ the centroids of each class can then be calculated\cite{ai-course-notes}: 
 
 \begin{equation}
     \mathbf{\mu}_{km} = \frac{1}{N_{km}} \sum_{i,l_i=k, q_i=m}{\mathbf{x}_i}, k=1,...,K,
@@ -30,7 +30,7 @@ The subclass label of vector $\mathbf{x}_i$ is $q_i$ and $N_{km}$ is the amount 
 The Nearest Neighbor schema stores the training data and classifies observations based on which training data samples they are closest to. The amount of neighbors to specify is highly dependent on the data set. A high amount of neighbors reduces the effect of bad samples and noise\cite{nearest-neighbor}. Meanwhile a low amount of neighbors leads to spurious classifications of possible outliers. 
 
 \subsection{Perceptron using Backpropagation or MSE}
-Perceptron is a (binary) linear classifier that decides if an observation is in a class or not. As an example looking at only two classes $c_1$ and $c_2$. Given a weight vector $\mathbf{w}$ and a input vector $\mathbf{x}\in\mathbb{R}^D$ then a linear discrimination function g is: 
+Perceptron is a (binary) linear classifier that decides if an observation is in a class or not. As an example looking at only two classes $c_1$ and $c_2$. Given a weight vector $\mathbf{w}$ and a input vector $\mathbf{x}\in\mathbbm{R}^D$ then a linear discrimination function g is: 
 
 \begin{equation}
     g(\mathbf{x})=\mathbf{x}^Tx + w_0 = \sum_{d=1}^D{w_dx_d+w_0}
