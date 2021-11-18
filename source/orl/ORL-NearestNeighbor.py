@@ -17,7 +17,7 @@ from source.utility import Utility
 # FULLD: {'n_neighbors': 2, 'weights': 'distance'}
 def tuneHyperParameters():
     # Load data sets
-    orl_dataSet_raw = Utility.load_ORL("data\\")
+    orl_dataSet_raw = Utility.load_ORL("data/")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
     # defining parameter range
@@ -41,12 +41,12 @@ if __name__ == '__main__':
     figureTitle = "ORL - Nearest neighbor"
     classifierName = "nearestNeighbor"
     neighbors = 5
-    figurePrefix = f'pictures\\{classifierName}-{neighbors}'
-    logPath = f'logs\\{classifierName}-{neighbors}-log.txt'
+    figurePrefix = f'pictures/{classifierName}-{neighbors}'
+    logPath = f'logs/{classifierName}-{neighbors}-log.txt'
     logfile = open(logPath, 'w')
 
     # Load data sets
-    orl_dataSet_raw = Utility.load_ORL("data\\")
+    orl_dataSet_raw = Utility.load_ORL("data/")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
     start = time.time()

@@ -17,12 +17,12 @@ if __name__ == '__main__':
         # Visualization info
         figureTitle = "MNIST - Nearest sub-class centroid"
         classifierName = "nearestSubClassCentroid"
-        figurePrefix = f'pictures\\{classifierName}-{subClasses}'
-        logPath = f'logs\\{classifierName}-{subClasses}-log.txt'
+        figurePrefix = f'pictures/{classifierName}-{subClasses}'
+        logPath = f'logs/{classifierName}-{subClasses}-log.txt'
         logfile = open(logPath, 'w')
 
         # Load data sets
-        mnist_dataSet_raw = Utility.load_MNIST("data\\")
+        mnist_dataSet_raw = Utility.load_MNIST("data/")
         mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
         start = time.time()

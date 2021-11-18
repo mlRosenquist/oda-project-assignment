@@ -16,7 +16,7 @@ from source.utility import Utility
 
 def tuneHyperParameters():
     # Load data sets
-    orl_dataSet_raw = Utility.load_ORL("data\\")
+    orl_dataSet_raw = Utility.load_ORL("data/")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
     # defining parameter range
@@ -42,12 +42,12 @@ if __name__ == '__main__':
     # Visualization info
     figureTitle = "ORL - Nearest class centroid"
     classifierName = "nearestClassCentroid"
-    figurePrefix = f'pictures\\{classifierName}'
-    logPath = f'logs\\{classifierName}-log.txt'
+    figurePrefix = f'pictures/{classifierName}'
+    logPath = f'logs/{classifierName}-log.txt'
     logfile = open(logPath, 'w')
 
     # Load data sets
-    orl_dataSet_raw = Utility.load_ORL("data\\")
+    orl_dataSet_raw = Utility.load_ORL("data/")
     orl_dataSet_2d = Utility.pca_transform(orl_dataSet_raw, 2)
 
     start = time.time()

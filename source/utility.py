@@ -1,7 +1,6 @@
 import os
 
 from matplotlib import  pyplot as plt
-from pydantic import BaseModel
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import minmax_scale, StandardScaler
 from sklearn.model_selection import train_test_split

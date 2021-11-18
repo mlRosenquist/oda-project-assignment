@@ -35,8 +35,8 @@ class DataVisualization:
 if __name__ == '__main__':
     # MNIST
 
-    mnist_folder = "mnist\\data\\"
-    mnist_figurePath = "mnist\\pictures\\"
+    mnist_folder = "mnist/data/"
+    mnist_figurePath = "mnist/pictures/"
 
     # Load data sets
     mnist_dataSet_raw = Utility.load_MNIST(mnist_folder)
@@ -89,8 +89,8 @@ if __name__ == '__main__':
     plt.clf()
 
     # ORL
-    orl_folder = "orl\\data\\"
-    orl_figurePath = "orl\\pictures\\"
+    orl_folder = "orl/data/"
+    orl_figurePath = "orl/pictures/"
 
     # Load data sets
     orl_dataSet_original = Utility.load_ORL_original(orl_folder)

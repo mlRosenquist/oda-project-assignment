@@ -17,7 +17,7 @@ from source.utility import Utility
 # FULLD: {'n_neighbors': 5, 'weights': 'distance'}
 def tuneHyperParameters():
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST("data\\")
+    mnist_dataSet_raw = Utility.load_MNIST("data/")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     # defining parameter range
@@ -41,12 +41,12 @@ if __name__ == '__main__':
     figureTitle = "MNIST - Nearest neighbor"
     classifierName = "nearestNeighbor"
     neighbors = 5
-    figurePrefix = f'pictures\\{classifierName}-{neighbors}'
-    logPath = f'logs\\{classifierName}-{neighbors}-log.txt'
+    figurePrefix = f'pictures/{classifierName}-{neighbors}'
+    logPath = f'logs/{classifierName}-{neighbors}-log.txt'
     logfile = open(logPath, 'w')
 
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST("data\\")
+    mnist_dataSet_raw = Utility.load_MNIST("data/")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     start = time.time()

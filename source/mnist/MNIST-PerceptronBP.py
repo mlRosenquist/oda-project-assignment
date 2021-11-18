@@ -16,7 +16,7 @@ from source.utility import Utility
 # FULLD: {'alpha': 0, 'eta0': 0.425, 'learning_rate': 'adaptive', 'loss': 'hinge'}
 def tuneHyperParameters():
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST("data\\")
+    mnist_dataSet_raw = Utility.load_MNIST("data/")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     # defining parameter range
@@ -50,12 +50,12 @@ if __name__ == '__main__':
     # Visualization info
     figureTitle = "MNIST - Perceptron using BackPropagation"
     classifierName = "perceptronBP"
-    figurePrefix = f'pictures\\{classifierName}'
-    logPath = f'logs\\{classifierName}-log.txt'
+    figurePrefix = f'pictures/{classifierName}'
+    logPath = f'logs/{classifierName}-log.txt'
     logfile = open(logPath, 'w')
 
     # Load data sets
-    mnist_dataSet_raw = Utility.load_MNIST("data\\")
+    mnist_dataSet_raw = Utility.load_MNIST("data/")
     mnist_dataSet_2d = Utility.pca_transform(mnist_dataSet_raw, 2)
 
     start = time.time()
