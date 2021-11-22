@@ -1,5 +1,5 @@
-Training time for nearestSubClassCentroid : 0.7056417465209961s
-Training time for nearestSubClassCentroid 2d: 0.6315743923187256s
+Training time for nearestSubClassCentroid : 4.845670223236084s
+Training time for nearestSubClassCentroid 2d: 0.28927183151245117s
               precision    recall  f1-score   support
 
            1     0.3333    1.0000    0.5000         1

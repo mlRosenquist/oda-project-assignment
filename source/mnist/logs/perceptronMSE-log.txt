@@ -1,5 +1,5 @@
-Training time for perceptronMSE 2d: 9.452141284942627s
-Training time for perceptronMSE 2d: 0.2131941318511963s
+Training time for perceptronMSE 2d: 6.121083974838257s
+Training time for perceptronMSE 2d: 0.09403610229492188s
               precision    recall  f1-score   support
 
            0     0.9067    0.9622    0.9337       980

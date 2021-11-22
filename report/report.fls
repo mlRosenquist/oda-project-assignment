@@ -1314,12 +1314,6 @@ INPUT ./contents/conclusion.tex
 INPUT contents/conclusion.tex
 INPUT ./contents/conclusion.tex
 INPUT contents/conclusion.tex
-INPUT ./report.tdo
-INPUT report.tdo
-INPUT report.tdo
-OUTPUT report.tdo
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out

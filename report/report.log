@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.18)  18 NOV 2021 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.18)  22 NOV 2021 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1763,28 +1763,7 @@ Package pdftex.def Info: ../source/mnist/pictures/perceptronBP-boundary-train.pn
 ) (./contents/discussion.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <../source/mnist/pictures/nearestClassCentroid-confusion-784d.png> <../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png> <../source/mnist/pictures/perceptronBP-confusion-784d.png> <../source/mnist/pictures/nearestClassCentroid-confusion-2d.png> <../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png> <../source/mnist/pictures/perceptronBP-confusion-2d.png>] (./contents/conclusion.tex) [5 <../source/orl/pictures/nearestClassCentroid-confusion-784d.png> <../source/orl/pictures/nearestNeighbor-5-confusion-784d.png> <../source/orl/pictures/perceptronBP-confusion-784d.png> <../source/orl/pictures/nearestClassCentroid-confusion-2d.png> <../source/orl/pictures/nearestNeighbor-5-confusion-2d.png> <../source/orl/pictures/perceptronBP-confusion-2d.png> <../source/mnist/pictures/nearestClassCentroid-boundary-train.png> <../source/mnist/pictures/nearestNeighbor-5-boundary-train.png>] [6
-
- <../source/mnist/pictures/perceptronBP-boundary-train.png>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 84.
-
-Overfull \hbox (2.63986pt too wide) in paragraph at lines 85--85
-[][][]\OT1/ptm/m/n/5 Update 
- []
-
-
-Overfull \hbox (2.63986pt too wide) in paragraph at lines 85--85
-[][][]\OT1/ptm/m/n/5 Update 
- []
-
-
-LaTeX Warning: Marginpar on page 7 moved.
-
-(./report.tdo)
-\tf@tdo=\write6
-\openout6 = `report.tdo'.
-
-
+ [4 <../source/mnist/pictures/nearestClassCentroid-confusion-784d.png> <../source/mnist/pictures/nearestNeighbor-5-confusion-784d.png> <../source/mnist/pictures/perceptronBP-confusion-784d.png> <../source/mnist/pictures/nearestClassCentroid-confusion-2d.png> <../source/mnist/pictures/nearestNeighbor-5-confusion-2d.png> <../source/mnist/pictures/perceptronBP-confusion-2d.png>] (./contents/conclusion.tex) [5 <../source/orl/pictures/nearestClassCentroid-confusion-784d.png> <../source/orl/pictures/nearestNeighbor-5-confusion-784d.png> <../source/orl/pictures/perceptronBP-confusion-784d.png> <../source/orl/pictures/nearestClassCentroid-confusion-2d.png> <../source/orl/pictures/nearestNeighbor-5-confusion-2d.png> <../source/orl/pictures/perceptronBP-confusion-2d.png> <../source/mnist/pictures/nearestClassCentroid-boundary-train.png> <../source/mnist/pictures/nearestNeighbor-5-boundary-train.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1796,9 +1775,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
+[6
 
-] (./report.aux)
+ <../source/mnist/pictures/perceptronBP-boundary-train.png>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: CEAABB1E80E0FFD7BF10D599B59313E8;2039.
 Package logreq Info: Writing requests to 'report.run.xml'.
@@ -1806,18 +1785,18 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30826 strings out of 478862
- 582001 string characters out of 5858944
- 1385879 words of memory out of 6000000
- 47875 multiletter control sequences out of 15000+600000
- 441959 words of font info for 107 fonts, out of 8000000 for 9000
+ 30700 strings out of 478862
+ 579254 string characters out of 5858944
+ 1385589 words of memory out of 6000000
+ 47757 multiletter control sequences out of 15000+600000
+ 440881 words of font info for 106 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 99i,13n,131p,1368b,1388s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,131p,1407b,1388s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rep-cmrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} </home/mlrosenquist/.texlive2021/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mlmodern/mlmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (7 pages, 1555705 bytes).
+Output written on report.pdf (6 pages, 1554555 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

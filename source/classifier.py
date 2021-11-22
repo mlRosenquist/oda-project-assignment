@@ -14,11 +14,11 @@ from source.utility import DataSet
 from mlxtend.plotting import plot_decision_regions
 
 
-# Taken from: https://github.com/SimplisticCode/ODA-ML/blob/master/NearestSubclassCentroid.py
+# Inspired by: https://github.com/SimplisticCode/ODA-ML/blob/master/NearestSubclassCentroid.py
 class NearestSubclassCentroid:
     def __init__(self, K):
-        self.centroids = None
         self.K = K
+        self.centroids = []
 
     def fit(self, X, y):
         subrows = defaultdict(list)
@@ -26,19 +26,19 @@ class NearestSubclassCentroid:
             # Collect indices of exemplars for the given class label
             subrows[y[i]].append(i)
 
-        centroids = []
         for index, label in enumerate(subrows.keys()):
             exemplars = X[subrows[label]]
             # compute centroid for exemplars
-            subclasscentroids = self.subclasscentroid(exemplars, self.K)
+            subclasscentroids = self.__get_subclass_centroids(exemplars)
             for centroid in subclasscentroids:
-                centroids.append({"centroid": centroid, "label": label})
-        self.centroids = centroids
+                self.centroids.append({"centroid": centroid, "label": label})
+
         return self
 
-    def subclasscentroid(self, X, Nsubclasses):
-        subclasscentroids = KMeans(n_clusters=Nsubclasses, random_state=0).fit(X).cluster_centers_
-        return subclasscentroids
+
+    def __get_subclass_centroids(self, X):
+        subclass_centroids = KMeans(n_clusters=self.K, random_state=0).fit(X).cluster_centers_
+        return subclass_centroids
 
     def predict(self, X):
         results = []
@@ -50,7 +50,6 @@ class NearestSubclassCentroid:
             results.append(distances[0][1])
 
         return numpy.array(results)
-
 
 class Classifier:
 

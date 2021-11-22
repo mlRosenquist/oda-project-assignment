@@ -1,5 +1,5 @@
-Training and time for nearestSubClassCentroid 2d: 7.620985984802246s
-Training and time for nearestSubClassCentroid 2d: 0.8045346736907959s
+Training and time for nearestSubClassCentroid 2d: 16.7589910030365s
+Training and time for nearestSubClassCentroid 2d: 9.784530401229858s
               precision    recall  f1-score   support
 
            0     0.9225    0.9357    0.9291       980
@@ -23,14 +23,14 @@ weighted avg     0.8828    0.8824    0.8821     10000
            1     0.8157    0.9630    0.8832      1135
            2     0.3224    0.2859    0.3030      1032
            3     0.4538    0.4624    0.4581      1010
-           4     0.3436    0.3523    0.3479       982
+           4     0.3456    0.3544    0.3499       982
            5     0.1954    0.1626    0.1775       892
            6     0.3402    0.2745    0.3039       958
-           7     0.3639    0.4708    0.4105      1028
+           7     0.3641    0.4718    0.4110      1028
            8     0.2814    0.2577    0.2690       974
-           9     0.2959    0.2190    0.2517      1009
+           9     0.2966    0.2190    0.2520      1009
 
-    accuracy                         0.4236     10000
-   macro avg     0.3960    0.4133    0.4013     10000
-weighted avg     0.4038    0.4236    0.4103     10000
+    accuracy                         0.4239     10000
+   macro avg     0.3963    0.4136    0.4016     10000
+weighted avg     0.4041    0.4239    0.4106     10000
 
