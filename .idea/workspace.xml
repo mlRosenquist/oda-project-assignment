@@ -1,90 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df73d8bc-32ca-4c89-ada0-1f3d08b6be56" name="Changes" comment="Final commit">
-      <change afterPath="$PROJECT_DIR$/files/report_morten_lyng_rosenquist.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/contents/discussion.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/discussion.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/contents/results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/contents/results.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.fdb_latexmk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.fls" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.fls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestClassCentroid-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestClassCentroid-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestNeighbor-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestNeighbor-5-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-2-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-2-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-3-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-3-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/nearestSubClassCentroid-5-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/perceptronBP-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/perceptronBP-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/logs/perceptronMSE-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/logs/perceptronMSE-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestClassCentroid-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestClassCentroid-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestClassCentroid-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestClassCentroid-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestNeighbor-5-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-2-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-3-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/nearestSubClassCentroid-5-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronBP-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/mnist/pictures/perceptronMSE-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-NearestSubClassCentroid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/ORL-PerceptronMSE.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/ORL-PerceptronMSE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestClassCentroid-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestClassCentroid-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestNeighbor-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestNeighbor-5-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-2-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-2-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-3-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-3-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-5-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/nearestSubClassCentroid-5-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/perceptronBP-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/perceptronBP-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/logs/perceptronMSE-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/logs/perceptronMSE-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestClassCentroid-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestNeighbor-5-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-2-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-3-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/nearestSubClassCentroid-5-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronBP-confusion-784d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-boundary-test.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-boundary-test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-boundary-train.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-boundary-train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-confusion-2d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-confusion-2d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-confusion-784d.png" beforeDir="false" afterPath="$PROJECT_DIR$/source/orl/pictures/perceptronMSE-confusion-784d.png" afterDir="false" />
-    </list>
+    <list default="true" id="df73d8bc-32ca-4c89-ada0-1f3d08b6be56" name="Changes" comment="Final commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -340,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637608722017</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final commit">
+      <created>1637608731964</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637608731964</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
